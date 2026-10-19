@@ -509,7 +509,7 @@
     <string name="export_directory_unavailable">Unable to access an export directory on this device. Please set one manually.</string>
     <string name="set_listenbrainz_token">Set ListenBrainz Token</string>
 
-    <!-- Flow Extractor Settings -->
+    <!-- Tunevol Extractor Settings -->
     <string name="youtube_decryption_settings">Tunevol Extractor</string>
     <string name="youtube_decryption_desc">Configure extractor settings</string>
     <string name="youtube_decryption_support">Tunevol Extractor</string>
@@ -854,7 +854,7 @@
     <string name="listen_together_logs_desc">Manage Connection logs settings</string>
     <string name="listen_together_choose_server_desc">Manage Choose server settings</string>
 
-    <!-- Flow Brain -->
+    <!-- Tunevol Brain -->
     <string name="flow_brain_analyzed_artists">Analyzed Artists</string>
     <plurals name="flow_brain_artists_mapped">
         <item quantity="one">%1$d artist mapped</item>

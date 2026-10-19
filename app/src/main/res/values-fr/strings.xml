@@ -510,7 +510,7 @@
     <string name="export_directory_unavailable">Impossible d\'accéder à un dossier d\'exportation sur cet appareil. Veuillez en définir un manuellement.</string>
     <string name="set_listenbrainz_token">Définir le jeton ListenBrainz</string>
 
-    <!-- Flow Extractor Settings -->
+    <!-- Tunevol Extractor Settings -->
     <string name="youtube_decryption_settings">Extracteur Tunevol</string>
     <string name="youtube_decryption_desc">Configurer les paramètres de l\'extracteur</string>
     <string name="youtube_decryption_support">Extracteur Tunevol</string>
@@ -853,7 +853,7 @@
     <string name="listen_together_logs_desc">Gérer les paramètres des journaux de connexion</string>
     <string name="listen_together_choose_server_desc">Gérer les paramètres de choix du serveur</string>
 
-    <!-- Flow Brain -->
+    <!-- Tunevol Brain -->
     <string name="flow_brain_analyzed_artists">Artistes analysés</string>
     <plurals name="flow_brain_artists_mapped">
         <item quantity="one">%1$d artiste cartographié</item>
