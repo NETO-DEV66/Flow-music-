@@ -71,6 +71,7 @@ import coil3.compose.AsyncImage
 import com.flowmusic.app.BuildConfig
 import com.flowmusic.app.R
 import com.flowmusic.app.ui.component.parseMarkdown
+import com.flowmusic.app.ui.utils.parseMarkdownToSections
 import java.io.File
 import java.net.HttpURLConnection
 import java.net.URL
@@ -132,65 +133,32 @@ fun ChangelogScreen(
             showingCached = true
           }
         } else {
-          val changelogUrl =
-            URL("https://github.com/NETO-DEV66/Flow-music-/releases/download/$tag/changelog.json")
-          val connection = changelogUrl.openConnection() as HttpURLConnection
-          connection.setRequestProperty("User-Agent", "flowmusic-Changelog-App")
-          connection.setRequestProperty("Accept", "application/json")
-
-          if (connection.responseCode == 200) {
-            val changelogJson = connection.inputStream.bufferedReader().use { it.readText() }
-            val changelogData = JSONObject(changelogJson)
-
-            val desc = changelogData.optString("description", null)
-            val imageUrl = changelogData.optString("image", null)
-            val warning = changelogData.optString("warning", null)
-            val changelogArray = changelogData.optJSONArray("changelog")
-
-            val sections = mutableListOf<ChangelogSection>()
-            if (changelogArray != null) {
-              for (i in 0 until changelogArray.length()) {
-                val sectionObj = changelogArray.optJSONObject(i)
-                if (sectionObj != null) {
-                  val title = sectionObj.optString("title", "")
-                  val itemsArray = sectionObj.optJSONArray("items")
-                  val items = mutableListOf<String>()
-                  if (itemsArray != null) {
-                    for (j in 0 until itemsArray.length()) {
-                      items.add(itemsArray.getString(j))
-                    }
-                  }
-                  if (title.isNotBlank() || items.isNotEmpty()) {
-                    sections.add(ChangelogSection(title, items))
-                  }
-                } else {
-
-                  val item = changelogArray.optString(i, "")
-                  if (item.isNotBlank()) {
-                    if (sections.isEmpty() || sections[0].title.isNotBlank()) {
-                      sections.add(0, ChangelogSection("", mutableListOf()))
-                    }
-                    (sections[0].items as MutableList<String>).add(item)
-                  }
-                }
-              }
-            }
-
-            saveChangelogToCache(context, tag, sections, imageUrl, desc, warning)
-            withContext(Dispatchers.Main) {
-              changelogSections = sections
-              updateImage = imageUrl.takeIf { !it.isNullOrBlank() }
-              updateDescription = desc.takeIf { !it.isNullOrBlank() }
-              updateWarning = warning.takeIf { !it.isNullOrBlank() }
-              isLoading = false
-              hasError = false
-              showingCached = false
-            }
-          } else {
-            Log.e("ChangelogScreen", "HTTP Error ${connection.responseCode} for $tag")
+          val markdown = fetchReleaseNotesMarkdown(tag)
+          if (markdown.isNullOrBlank()) {
+            Log.e("ChangelogScreen", "No release notes available for $tag")
             withContext(Dispatchers.Main) {
               hasError = true
               isLoading = false
+            }
+          } else {
+            var imageUrl: String? = null
+            var body = markdown
+            Regex("!\\[(.*?)\\]\\((.*?)\\)").find(body)?.let { match ->
+              imageUrl = match.groupValues[2]
+              body = body.replace(match.value, "").trim()
+            }
+            val (parsedDesc, parsedSections) = parseMarkdownToSections(body)
+            val description = parsedDesc ?: body.takeIf { parsedSections.isEmpty() }
+
+            saveChangelogToCache(context, tag, parsedSections, imageUrl, description, null)
+            withContext(Dispatchers.Main) {
+              changelogSections = parsedSections
+              updateImage = imageUrl
+              updateDescription = description
+              updateWarning = null
+              isLoading = false
+              hasError = false
+              showingCached = false
             }
           }
         }
@@ -234,19 +202,9 @@ fun ChangelogScreen(
                 publishedAt
               }
 
-            val assets = obj.getJSONArray("assets")
-            var changelogUrl: String? = null
-            for (j in 0 until assets.length()) {
-              val asset = assets.getJSONObject(j)
-              if (asset.getString("name") == "changelog.json") {
-                changelogUrl = asset.getString("browser_download_url")
-                break
-              }
-            }
-
-            if (changelogUrl != null) {
-              list.add(ReleaseMetadata(tagName, name, formattedDate, null))
-            }
+            // Releases are listed even though no release carries a changelog.json asset: the
+            // notes are read from the release body, which every release has.
+            list.add(ReleaseMetadata(tagName, name, formattedDate, null))
           }
           withContext(Dispatchers.Main) {
             val currentVersion =
@@ -517,6 +475,31 @@ data class CachedChangelogData(
   val description: String?,
   val warning: String?
 )
+
+/**
+ * Release notes are read from the release body on GitHub. The app used to look for a
+ * `changelog.json` release asset instead, but nothing ever publishes one, so every lookup 404'd
+ * and the screen was permanently stuck on its error state.
+ */
+private fun fetchReleaseNotesMarkdown(versionTag: String): String? {
+  return try {
+    val connection =
+      URL("https://api.github.com/repos/NETO-DEV66/Flow-music-/releases/tags/$versionTag")
+        .openConnection() as HttpURLConnection
+    connection.setRequestProperty("User-Agent", "flowmusic-Changelog-App")
+    connection.setRequestProperty("Accept", "application/vnd.github+json")
+
+    if (connection.responseCode != 200) {
+      Log.e("ChangelogScreen", "GitHub API error ${connection.responseCode} for $versionTag")
+      return null
+    }
+    val json = connection.inputStream.bufferedReader().use { it.readText() }
+    JSONObject(json).optString("body").takeIf { it.isNotBlank() }
+  } catch (e: Exception) {
+    Log.e("ChangelogScreen", "Error fetching release notes for $versionTag: ${e.message}")
+    null
+  }
+}
 
 private fun cleanupOldChangelogCache(context: Context, currentVersionTag: String) {
   try {

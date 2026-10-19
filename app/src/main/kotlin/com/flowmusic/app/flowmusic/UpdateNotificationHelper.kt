@@ -31,8 +31,10 @@ object UpdateNotificationHelper {
       nm.createNotificationChannel(channel)
     }
 
-    val apkUrl = "https://github.com/NETO-DEV66/Flow-music-"
-    val intent = Intent(Intent.ACTION_VIEW, apkUrl.toUri())
+    // versionName is the release tag, so link straight at the release the user should install
+    // rather than dropping them on the repository home page.
+    val releaseUrl = "https://github.com/NETO-DEV66/Flow-music-/releases/tag/$versionName"
+    val intent = Intent(Intent.ACTION_VIEW, releaseUrl.toUri())
 
     val flags = PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
     val pending = PendingIntent.getActivity(context, NOTIFICATION_ID, intent, flags)

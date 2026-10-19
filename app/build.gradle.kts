@@ -33,8 +33,8 @@ android {
     applicationId = "com.flowmusic.app"
     minSdk = 26
     targetSdk = 36
-    versionCode = 165
-    versionName = "1.4.4"
+    versionCode = 166
+    versionName = "1.4.5"
 
     testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     vectorDrawables.useSupportLibrary = true
