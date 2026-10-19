@@ -272,7 +272,7 @@ object DownloadNotificationManager {
 
   private fun buildDownloadProgressLegacy(progress: Int, version: String): Notification {
     return NotificationCompat.Builder(appContext, CHANNEL_ID)
-      .setSmallIcon(R.drawable.ic_launcher)
+      .setSmallIcon(R.drawable.ic_launcher_foreground)
       .setContentTitle(appContext.getString(R.string.downloading_update))
       .setContentText(appContext.getString(R.string.version_progress, version, progress))
       .setProgress(100, progress, false)
