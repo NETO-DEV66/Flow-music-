@@ -339,7 +339,7 @@
     <string name="listen_together_smart_resync">Nutikas võrgu uuesti sünkroonimine</string>
     <string name="listen_together_smart_resync_desc">Pärast ühenduse katkemist saavuta automaatselt uuesti hostiga kooskõla</string>
     <string name="spotify_import_title">Impordi Spotify-st</string>
-    <string name="spotify_import_desc">Ühenda Spotify, vali esitusloendid ja peegelda need kohalikesse Flow Music esitusloenditesse.</string>
+    <string name="spotify_import_desc">Ühenda Spotify, vali esitusloendid ja peegelda need kohalikesse Flow Tune esitusloenditesse.</string>
     <string name="spotify_connect">Ühenda Spotify</string>
     <string name="spotify_refresh">Värskenda Spotify muusikakogu</string>
     <string name="spotify_select_sources">Vali Spotify esitusloendid</string>
@@ -399,7 +399,7 @@
     <string name="recognition_notification_processing">Tuvastamine…</string>
     <string name="recognition_notification_no_match">Vastet ei leitud</string>
     <string name="recognition_notification_failed">Tuvastamine ebaõnnestus</string>
-    <string name="listen_on_flow_music">Kuula Flow Musicus</string>
+    <string name="listen_on_flow_tune">Kuula Flow Tuneus</string>
     <string name="qs_tile_music_recognizer">Tuvasta muusika</string>
     <string name="flow_brain_beta">Flow Brain (beeta)</string>
     <string name="flow_brain_enable">Luba Flow Brain</string>

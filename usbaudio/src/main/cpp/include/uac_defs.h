@@ -2,7 +2,7 @@
 
 #include <cstdint>
 
-namespace com::flowmusic::usbaudio {
+namespace com::flowtune::usbaudio {
 
 // USB Class, Subclass & Protocol Codes
 inline constexpr uint8_t USB_CLASS_AUDIO = 0x01;
@@ -127,4 +127,4 @@ struct Uac2AsHeaderDescriptor {
 
 #pragma pack(pop)
 
-} // namespace com::flowmusic::usbaudio
+} // namespace com::flowtune::usbaudio

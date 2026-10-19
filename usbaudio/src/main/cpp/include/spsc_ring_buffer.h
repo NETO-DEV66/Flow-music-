@@ -5,7 +5,7 @@
 #include <atomic>
 #include <vector>
 
-namespace com::flowmusic::usbaudio {
+namespace com::flowtune::usbaudio {
 
 /**
  * Lock-free Single-Producer Single-Consumer (SPSC) FIFO ring buffer.
@@ -70,4 +70,4 @@ private:
     alignas(64) std::atomic<size_t> read_index_{0};
 };
 
-} // namespace com::flowmusic::usbaudio
+} // namespace com::flowtune::usbaudio

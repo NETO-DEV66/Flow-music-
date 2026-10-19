@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Upstream InnerTune strings --><!-- Do not add new features here --><!-- Try to re-use strings here, but be careful on its usage e.g. verb vs noun --><!-- "InnerTune" is replaced with "flowmusic" --><!-- Translators: Do not modify this file for translations, use InnerTune's Weblate instead. --><resources>
+<!-- Upstream InnerTune strings --><!-- Do not add new features here --><!-- Try to re-use strings here, but be careful on its usage e.g. verb vs noun --><!-- "InnerTune" is replaced with "flowtune" --><!-- Translators: Do not modify this file for translations, use InnerTune's Weblate instead. --><resources>
     <!-- Bottom navigation -->
     <string name="home">Ana Sayfa</string>
     <string name="songs">Şarkılar</string>
@@ -359,7 +359,7 @@
     <string name="listen_together_smart_resync">Akıllı Ağ Yeniden Senkronizasyonu</string>
     <string name="listen_together_smart_resync_desc">Bağlantı kesildikten sonra sunucuyu otomatik olarak yakala</string>
     <string name="spotify_import_title">Spotify\'dan İçe Aktar</string>
-    <string name="spotify_import_desc">Spotify\'ı bağlayın, çalma listeleri seçin ve bunları yerel Flow Music çalma listelerine yansıtın.</string>
+    <string name="spotify_import_desc">Spotify\'ı bağlayın, çalma listeleri seçin ve bunları yerel Flow Tune çalma listelerine yansıtın.</string>
     <string name="spotify_connect">Spotify\'ı Bağla</string>
     <string name="spotify_refresh">Spotify kütüphanesini yenile</string>
     <string name="spotify_select_sources">Spotify çalma listelerini seç</string>
@@ -418,7 +418,7 @@
     <string name="recognition_notification_processing">Tanımlanıyor…</string>
     <string name="recognition_notification_no_match">Eşleşme bulunamadı</string>
     <string name="recognition_notification_failed">Tanıma başarısız oldu</string>
-    <string name="listen_on_flow_music">Flow Music\'te dinle</string>
+    <string name="listen_on_flow_tune">Flow Tune\'te dinle</string>
     <string name="qs_tile_music_recognizer">Müziği tanı</string>
     <string name="flow_brain_beta">Flow Brain (Beta)</string>
     <string name="flow_brain_enable">Flow Brain\'i etkinleştir</string>

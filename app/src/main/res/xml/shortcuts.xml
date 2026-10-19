@@ -6,9 +6,9 @@
         android:shortcutId="search"
         android:shortcutShortLabel="@string/search">
         <intent
-            android:action="com.flowmusic.app.action.SEARCH"
-            android:targetClass="com.flowmusic.app.MainActivity"
-            android:targetPackage="com.flowmusic.app" />
+            android:action="com.flowtune.app.action.SEARCH"
+            android:targetClass="com.flowtune.app.MainActivity"
+            android:targetPackage="com.flowtune.app" />
     </shortcut>
     <shortcut
         android:enabled="true"
@@ -16,8 +16,8 @@
         android:shortcutId="library"
         android:shortcutShortLabel="@string/filter_library">
         <intent
-            android:action="com.flowmusic.app.action.LIBRARY"
-            android:targetClass="com.flowmusic.app.MainActivity"
-            android:targetPackage="com.flowmusic.app" />
+            android:action="com.flowtune.app.action.LIBRARY"
+            android:targetClass="com.flowtune.app.MainActivity"
+            android:targetPackage="com.flowtune.app" />
     </shortcut>
 </shortcuts>

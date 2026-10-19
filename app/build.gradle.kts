@@ -25,16 +25,16 @@ if (hasGoogleServicesConfig) {
 }
 
 android {
-  namespace = "com.flowmusic.app"
+  namespace = "com.flowtune.app"
   compileSdk = 37
   ndkVersion = "28.2.13676358"
 
   defaultConfig {
-    applicationId = "com.flowmusic.app"
+    applicationId = "com.flowtune.app"
     minSdk = 26
     targetSdk = 36
-    versionCode = 166
-    versionName = "1.4.5"
+    versionCode = 167
+    versionName = "1.5.0"
 
     testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     vectorDrawables.useSupportLibrary = true
@@ -311,7 +311,7 @@ dependencies {
   implementation(project(":shazamkit"))
   implementation(project(":artistvideo"))
   implementation(project(":applecanvas"))
-  implementation(project(":flowmusiccanvas"))
+  implementation(project(":flowtunecanvas"))
   implementation(project(":paxsenixlyrics"))
   implementation(project(":unison"))
 

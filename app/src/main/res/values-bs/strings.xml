@@ -278,7 +278,7 @@
     <string name="preview">Pregled</string>
     <string name="app_version">Verzija aplikacije</string>
     <string name="action_logout">Izpiši se</string>
-    <string name="about">O flowmusic-u</string>
+    <string name="about">O flowtune-u</string>
     <string name="clear_translation_models">Rasčisti modele prevođenja</string>
     <string name="new_version_available">Dostupna je nova verzija</string>
     <string name="translation_models">Modeli prevođenja</string>
@@ -349,7 +349,7 @@
     <string name="listen_together_smart_resync">Pametna mrežna ponovna sinhronizacija</string>
     <string name="listen_together_smart_resync_desc">Automatski se uskladite s domaćinom nakon prekida veze</string>
     <string name="spotify_import_title">Uvezi sa Spotifyja</string>
-    <string name="spotify_import_desc">Povežite Spotify, odaberite spiskove i preslikajte ih u lokalne Flow Music spiskove.</string>
+    <string name="spotify_import_desc">Povežite Spotify, odaberite spiskove i preslikajte ih u lokalne Flow Tune spiskove.</string>
     <string name="spotify_connect">Poveži Spotify</string>
     <string name="spotify_refresh">Osvježi Spotify biblioteku</string>
     <string name="spotify_select_sources">Odaberite Spotify spiskove</string>
@@ -410,7 +410,7 @@
     <string name="other_services">Ostale usluge</string>
     <string name="status_online">Na mreži</string>
     <string name="status_offline">Van mreže</string>
-    <string name="listen_on_flow_music">Slušajte na Flow Music</string>
+    <string name="listen_on_flow_tune">Slušajte na Flow Tune</string>
     <string name="qs_tile_music_recognizer">Prepoznaj muziku</string>
     <string name="flow_brain_beta">Flow Brain (Beta)</string>
     <string name="flow_brain_enable">Omogući Flow Brain</string>

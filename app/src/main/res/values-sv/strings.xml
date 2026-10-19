@@ -346,7 +346,7 @@
     <string name="listen_together_smart_resync">Smart nätverkssynkronisering</string>
     <string name="listen_together_smart_resync_desc">Synkronisera automatiskt med värden efter ett anslutningsavbrott</string>
     <string name="spotify_import_title">Importera från Spotify</string>
-    <string name="spotify_import_desc">Anslut Spotify, välj spellistor och spegla dem till lokala spellistor i Flow Music.</string>
+    <string name="spotify_import_desc">Anslut Spotify, välj spellistor och spegla dem till lokala spellistor i Flow Tune.</string>
     <string name="spotify_connect">Anslut Spotify</string>
     <string name="spotify_refresh">Uppdatera Spotify-biblioteket</string>
     <string name="spotify_select_sources">Välj Spotify-spellistor</string>
@@ -390,7 +390,7 @@
     <string name="recognition_notification_processing">Identifierar…</string>
     <string name="recognition_notification_no_match">Ingen matchning hittades</string>
     <string name="recognition_notification_failed">Igenkänningen misslyckades</string>
-    <string name="listen_on_flow_music">Lyssna i Flow Music</string>
+    <string name="listen_on_flow_tune">Lyssna i Flow Tune</string>
     <string name="qs_tile_music_recognizer">Identifiera musik</string>
     <string name="flow_brain_beta">Flow Brain (beta)</string>
     <string name="flow_brain_enable">Aktivera Flow Brain</string>

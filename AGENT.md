@@ -1,4 +1,4 @@
-# AGENT.md - Flow Music
+# AGENT.md - Flow Tune
 
 Context file for AI agents (Antigravity, Claude Code, etc.) working in this repo.
 Keep this file up to date as the project evolves — it's the fastest way to give
@@ -73,7 +73,7 @@ All UI work — new screens, new components, and edits to existing ones —
 applying standard Material Design 3 guidelines or Material You.
 
 We maintain a dedicated **[DESIGN.md](DESIGN.md)** file which serves as the central
-hub for all design decisions, component usage, and style choices in the Flow Music codebase.
+hub for all design decisions, component usage, and style choices in the Flow Tune codebase.
 
 **Key Requirements:**
 - **Clean and Minimal:** Emphasize the Nothing OS 5.0 aesthetic. Focus on high-contrast, typography-driven layouts, monochrome or minimal color palettes, and distinct geometry.
@@ -100,11 +100,11 @@ If a new feature needs a UI pattern not covered in `DESIGN.md`, create a minimal
 
 ### Things to double check before assuming
 
-- Exact current contents of `com/flowmusic/flowmusic/` (contains core app-level initializers/application class) and `:unison` (cross-cutting/shared utilities and common base classes) — check source before editing.
+- Exact current contents of `com/flowtune/flowtune/` (contains core app-level initializers/application class) and `:unison` (cross-cutting/shared utilities and common base classes) — check source before editing.
 
 ## What this app is
 
-Flow Music is a native **Android** music streaming client (Kotlin + Jetpack
+Flow Tune is a native **Android** music streaming client (Kotlin + Jetpack
 Compose) that streams from YouTube Music's catalog ad-free, and layers on
 offline downloads, real-time synced lyrics, music recognition ("Flow Find"),
 podcasts, local media playback, Spotify import, "Listen Together" (synced
@@ -112,7 +112,7 @@ group listening), and more. It ships as a single
 **GMS** build variant (Google Cast + Firebase enabled) — the previous FOSS
 (no-Google-services) flavor has been removed. See "Build variants" below.
 
-Package/namespace: `com.flowmusic.app` (app module). Application ID matches.
+Package/namespace: `com.flowtune.app` (app module). Application ID matches.
 
 ## Tech stack
 
@@ -157,7 +157,7 @@ mostly-independent feature/integration:
 | `:innertube` | YouTube Music InnerTube API client (the core music source) |
 | `:kugou`, `:lrclib`, `:betterlyrics`, `:youlyplus`, `:paxsenixlyrics`, `:simpmusic` | Individual lyrics source providers (each consumed by `:lyrics`) |
 | `:shazamkit` | Music recognition ("Flow Find") |
-| `:canvas`, `:flowmusiccanvas`, `:applecanvas` | Canvas-style looping video backgrounds for tracks (different providers) |
+| `:canvas`, `:flowtunecanvas`, `:applecanvas` | Canvas-style looping video backgrounds for tracks (different providers) |
 | `:artistvideo` | Artist video features |
 | `:unison` | Cross-cutting shared utility module (check source before editing) |
 
@@ -168,7 +168,7 @@ in `settings.gradle.kts`, add it as an `implementation(project(":name"))` in
 
 ## App module internal structure
 
-Path: `app/src/main/kotlin/com/flowmusic/` (note: source dir is `kotlin/`,
+Path: `app/src/main/kotlin/com/flowtune/` (note: source dir is `kotlin/`,
 not `java/` — despite what older internal docs may say).
 
 ```
@@ -180,7 +180,7 @@ db/
   entities/     Room entities (Song, Album, Artist, Playlist, Lyrics, etc.)
   daos/         Room DAOs
 di/             Hilt modules (AppModule, NetworkModule, Qualifiers, entry points)
-flowmusic/      Core app-level classes (Application class, core initializers)
+flowtune/      Core app-level classes (Application class, core initializers)
 eq/             Equalizer
 extensions/     Kotlin extension functions
 listentogether/ "Listen Together" synced group listening feature
@@ -333,7 +333,7 @@ Run tests with:
 
 ## Local Taste Engine
 
-The Local Taste Engine (`com.flowmusic.app.generate`) provides offline, account-free algorithmic recommendation and smart mix generation:
+The Local Taste Engine (`com.flowtune.app.generate`) provides offline, account-free algorithmic recommendation and smart mix generation:
 - **Database (v47, v48):**
   - v47: Introduces `song_play_stats` (keyed by normalized `trackKey` = `"${title.trim()}|${artist.trim()}".lowercase()`) and `recommendation_exclusions`. Auto-migration backfills legacy playback history without data loss.
   - v48: Re-introduces `taste_profile` table (`TasteProfileEntity`, `TasteProfileDao`) storing Last.fm top artists, tracks, and genre snapshots.
@@ -352,7 +352,7 @@ The Local Taste Engine (`com.flowmusic.app.generate`) provides offline, account-
 
 ## Music Flow
 
-Optional full-screen vertical swipe discovery (`com.flowmusic.app.musicflow`, route `music_flow`, settings route `settings/music_flow`). It is a UI/orchestration layer over the existing player — never add a player, ExoPlayer or service for it.
+Optional full-screen vertical swipe discovery (`com.flowtune.app.musicflow`, route `music_flow`, settings route `settings/music_flow`). It is a UI/orchestration layer over the existing player — never add a player, ExoPlayer or service for it.
 
 - **Playback ownership:** `MusicFlowCoordinator` turns settled pager pages into commands on the shared `MusicService` via the `MusicFlowPlayer` interface (`PlayerConnectionMusicFlowPlayer` in production). First takeover plays a `MusicFlowQueue` (a normal `Queue`); later swipes `seekTo` inside it. Flow "owns" playback only while `MusicService.activeQueue` is its queue instance — any playlist/radio/clear replaces it and Flow stops commanding. Requests carry increasing ids and are debounced in `MusicFlowViewModel`, so rapid swipes only command the final page.
 - **Queue handoff:** before the first takeover, `MusicService.snapshotQueue()` captures the prior queue (in memory only, never persisted, so nothing stale is restored after process death). `Restore previous queue` calls `restoreQueueSnapshot` only while Flow still owns playback; a superseding queue invalidates it. Opening the normal player keeps the current Flow song.

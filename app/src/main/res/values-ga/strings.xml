@@ -374,7 +374,7 @@
     <string name="listen_together_smart_resync">Athshioncrónú cliste líonra</string>
     <string name="listen_together_smart_resync_desc">Déan suas go huathoibríoch leis an óstach tar éis titim naisc</string>
     <string name="spotify_import_title">Iompórtáil ó Spotify</string>
-    <string name="spotify_import_desc">Ceangail Spotify, roghnaigh seinnliostaí agus cóipeáil iad chuig seinnliostaí áitiúla Flow Music.</string>
+    <string name="spotify_import_desc">Ceangail Spotify, roghnaigh seinnliostaí agus cóipeáil iad chuig seinnliostaí áitiúla Flow Tune.</string>
     <string name="spotify_connect">Ceangail Spotify</string>
     <string name="spotify_refresh">Athnuaigh leabharlann Spotify</string>
     <string name="spotify_select_sources">Roghnaigh seinnliostaí Spotify</string>
@@ -418,7 +418,7 @@
     <string name="recognition_notification_processing">Á aithint…</string>
     <string name="recognition_notification_no_match">Níor aimsíodh aon mheaitseáil</string>
     <string name="recognition_notification_failed">Theip ar an aithint</string>
-    <string name="listen_on_flow_music">Éist ar Flow Music</string>
+    <string name="listen_on_flow_tune">Éist ar Flow Tune</string>
     <string name="qs_tile_music_recognizer">Aithin ceol</string>
     <string name="flow_brain_beta">Flow Brain (Béite)</string>
     <string name="flow_brain_enable">Cumasaigh Flow Brain</string>

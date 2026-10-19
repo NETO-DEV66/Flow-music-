@@ -339,7 +339,7 @@
     <string name="listen_together_smart_resync">Intelligens hálózati újraszinkronizálás</string>
     <string name="listen_together_smart_resync_desc">Automatikus felzárkózás a házigazdához a kapcsolat megszakadása után</string>
     <string name="spotify_import_title">Importálás a Spotifyból</string>
-    <string name="spotify_import_desc">Csatlakoztasd a Spotifyt, válassz lejátszási listákat, majd tükrözd őket helyi Flow Music-lejátszási listákba.</string>
+    <string name="spotify_import_desc">Csatlakoztasd a Spotifyt, válassz lejátszási listákat, majd tükrözd őket helyi Flow Tune-lejátszási listákba.</string>
     <string name="spotify_connect">Spotify csatlakoztatása</string>
     <string name="spotify_refresh">Spotify-könyvtár frissítése</string>
     <string name="spotify_select_sources">Spotify-lejátszási listák kiválasztása</string>
@@ -399,7 +399,7 @@
     <string name="recognition_notification_processing">Azonosítás…</string>
     <string name="recognition_notification_no_match">Nincs találat</string>
     <string name="recognition_notification_failed">A felismerés sikertelen</string>
-    <string name="listen_on_flow_music">Meghallgatás az Flow Musicban</string>
+    <string name="listen_on_flow_tune">Meghallgatás az Flow Tuneban</string>
     <string name="qs_tile_music_recognizer">Zene felismerése</string>
     <string name="flow_brain_beta">Flow Brain (béta)</string>
     <string name="flow_brain_enable">Flow Brain engedélyezése</string>

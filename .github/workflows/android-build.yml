@@ -77,5 +77,5 @@ jobs:
     - name: Upload Universal APK
       uses: actions/upload-artifact@v7
       with:
-        name: Flow-Music-Universal-APK
+        name: Flow-Tune-Universal-APK
         path: app/build/outputs/apk/**/*.apk

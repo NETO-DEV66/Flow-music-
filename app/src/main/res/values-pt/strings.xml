@@ -349,7 +349,7 @@
     <string name="listen_together_smart_resync">Ressincronização inteligente de rede</string>
     <string name="listen_together_smart_resync_desc">Acompanhar automaticamente o anfitrião após uma queda de ligação</string>
     <string name="spotify_import_title">Importar do Spotify</string>
-    <string name="spotify_import_desc">Ligue o Spotify, escolha listas de reprodução e espelhe-as em listas de reprodução locais Flow Music.</string>
+    <string name="spotify_import_desc">Ligue o Spotify, escolha listas de reprodução e espelhe-as em listas de reprodução locais Flow Tune.</string>
     <string name="spotify_connect">Ligar Spotify</string>
     <string name="spotify_refresh">Atualizar biblioteca do Spotify</string>
     <string name="spotify_select_sources">Selecionar listas de reprodução do Spotify</string>
@@ -409,7 +409,7 @@
     <string name="recognition_notification_processing">A identificar…</string>
     <string name="recognition_notification_no_match">Nenhuma correspondência encontrada</string>
     <string name="recognition_notification_failed">Falha no reconhecimento</string>
-    <string name="listen_on_flow_music">Ouvir no Flow Music</string>
+    <string name="listen_on_flow_tune">Ouvir no Flow Tune</string>
     <string name="qs_tile_music_recognizer">Reconhecer música</string>
     <string name="flow_brain_beta">Flow Brain (Beta)</string>
     <string name="flow_brain_enable">Ativar o Flow Brain</string>

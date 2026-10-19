@@ -345,7 +345,7 @@
     <string name="listen_together_smart_resync">Resinkronizasion intelizan rezo</string>
     <string name="listen_together_smart_resync_desc">Ratrap lot otomatikman apre enn koupir koneksion</string>
     <string name="spotify_import_title">Inporte depi Spotify</string>
-    <string name="spotify_import_desc">Konekte Spotify, swazir bann list lekout ek kopi zot dan bann list lekout lokal Flow Music.</string>
+    <string name="spotify_import_desc">Konekte Spotify, swazir bann list lekout ek kopi zot dan bann list lekout lokal Flow Tune.</string>
     <string name="spotify_connect">Konekte Spotify</string>
     <string name="spotify_refresh">Rafresi bibliotek Spotify</string>
     <string name="spotify_select_sources">Seleksionn bann list lekout Spotify</string>
@@ -389,7 +389,7 @@
     <string name="recognition_notification_processing">Pe idantifie…</string>
     <string name="recognition_notification_no_match">Okenn korespondans pa finn trouve</string>
     <string name="recognition_notification_failed">Rekonesans finn fel</string>
-    <string name="listen_on_flow_music">Ekoute lor Flow Music</string>
+    <string name="listen_on_flow_tune">Ekoute lor Flow Tune</string>
     <string name="qs_tile_music_recognizer">Rekonet mizik</string>
     <string name="flow_brain_beta">Flow Brain (Beta)</string>
     <string name="flow_brain_enable">Aktiv Flow Brain</string>

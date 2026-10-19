@@ -380,7 +380,7 @@
     <string name="recognition_notification_processing">Musiqi emal edilir</string>
     <string name="recognition_notification_no_match">Uyğunluq tapılmadı</string>
     <string name="recognition_notification_failed">Musiqini tanımaq mümkün olmadı</string>
-    <string name="listen_on_flow_music">Flow Music-də dinlə</string>
+    <string name="listen_on_flow_tune">Flow Tune-də dinlə</string>
     <string name="qs_tile_music_recognizer">Musiqi tanıyıcı</string>
     <string name="flow_brain_beta">Flow Brain Beta</string>
     <string name="flow_brain_enable">Flow Brain-i aktiv et</string>

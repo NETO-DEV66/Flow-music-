@@ -12,7 +12,7 @@ We release patches for security vulnerabilities in the following versions:
 
 ## Reporting a Vulnerability
 
-If you discover a security vulnerability in Flow Music, please report it responsibly:
+If you discover a security vulnerability in Flow Tune, please report it responsibly:
 
 1. **Do NOT** create a public GitHub issue
 2. Email us at: [NETO-DEV66@users.noreply.github.com](mailto:NETO-DEV66@users.noreply.github.com)
@@ -49,7 +49,7 @@ The following files contain sensitive information and should never be committed:
 
 ## Data Privacy
 
-Flow Music is committed to user privacy:
+Flow Tune is committed to user privacy:
 
 - **No personal data collection**: We do not collect personal information
 - **Local storage**: User data is stored locally on the device
@@ -63,4 +63,4 @@ For security-related questions or to report vulnerabilities:
 - Email: [NETO-DEV66@users.noreply.github.com](mailto:NETO-DEV66@users.noreply.github.com)
 - GitHub: Create a private security advisory
 
-Thank you for helping keep Flow Music secure!
+Thank you for helping keep Flow Tune secure!

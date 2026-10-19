@@ -349,7 +349,7 @@
     <string name="listen_together_smart_resync">Chytrá resynchronizace sítě</string>
     <string name="listen_together_smart_resync_desc">Automaticky se přizpůsobte hostiteli po výpadku připojení</string>
     <string name="spotify_import_title">Importovat ze Spotify</string>
-    <string name="spotify_import_desc">Připojte Spotify, vyberte playlisty a zrcadlete je do místních playlistů Flow Music.</string>
+    <string name="spotify_import_desc">Připojte Spotify, vyberte playlisty a zrcadlete je do místních playlistů Flow Tune.</string>
     <string name="spotify_connect">Připojit Spotify</string>
     <string name="spotify_refresh">Obnovit knihovnu Spotify</string>
     <string name="spotify_select_sources">Vybrat playlisty Spotify</string>
@@ -409,7 +409,7 @@
     <string name="recognition_notification_processing">Rozpoznávání…</string>
     <string name="recognition_notification_no_match">Nebyla nalezena žádná shoda</string>
     <string name="recognition_notification_failed">Rozpoznávání se nezdařilo</string>
-    <string name="listen_on_flow_music">Poslechnout v Flow Music</string>
+    <string name="listen_on_flow_tune">Poslechnout v Flow Tune</string>
     <string name="qs_tile_music_recognizer">Rozpoznat hudbu</string>
     <string name="flow_brain_beta">Flow Brain (Beta)</string>
     <string name="flow_brain_enable">Povolit Flow Brain</string>

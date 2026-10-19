@@ -379,7 +379,7 @@
     <string name="listen_together_smart_resync">إعادة مزامنة الشبكة الذكية</string>
     <string name="listen_together_smart_resync_desc">مزامنة التشغيل تلقائيًا مع المضيف بعد انقطاع الاتصال</string>
     <string name="spotify_import_title">الاستيراد من Spotify</string>
-    <string name="spotify_import_desc">اربط Spotify واختر قوائم التشغيل، ثم انسخها إلى قوائم تشغيل Flow Music المحلية.</string>
+    <string name="spotify_import_desc">اربط Spotify واختر قوائم التشغيل، ثم انسخها إلى قوائم تشغيل Flow Tune المحلية.</string>
     <string name="spotify_connect">ربط Spotify</string>
     <string name="spotify_refresh">تحديث مكتبة Spotify</string>
     <string name="spotify_select_sources">اختيار قوائم تشغيل Spotify</string>
@@ -439,7 +439,7 @@
     <string name="recognition_notification_processing">جارٍ التعرف…</string>
     <string name="recognition_notification_no_match">لم يتم العثور على تطابق</string>
     <string name="recognition_notification_failed">فشل التعرف</string>
-    <string name="listen_on_flow_music">الاستماع على Flow Music</string>
+    <string name="listen_on_flow_tune">الاستماع على Flow Tune</string>
     <string name="qs_tile_music_recognizer">التعرف على الموسيقى</string>
     <string name="flow_brain_beta">Flow Brain (تجريبي)</string>
     <string name="flow_brain_enable">تفعيل Flow Brain</string>

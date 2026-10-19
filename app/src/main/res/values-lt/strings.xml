@@ -366,7 +366,7 @@
     <string name="listen_together_smart_resync">Išmanusis tinklo sinchronizavimas</string>
     <string name="listen_together_smart_resync_desc">Nutrūkus ryšiui automatiškai susilyginti su vedėju</string>
     <string name="spotify_import_title">Importuoti iš „Spotify“</string>
-    <string name="spotify_import_desc">Prijunkite „Spotify“, pasirinkite grojaraščius ir nukopijuokite juos į vietinius „Flow Music“ grojaraščius.</string>
+    <string name="spotify_import_desc">Prijunkite „Spotify“, pasirinkite grojaraščius ir nukopijuokite juos į vietinius „Flow Tune“ grojaraščius.</string>
     <string name="spotify_connect">Prijungti „Spotify“</string>
     <string name="spotify_refresh">Atnaujinti „Spotify“ biblioteką</string>
     <string name="spotify_select_sources">Pasirinkti „Spotify“ grojaraščius</string>
@@ -410,7 +410,7 @@
     <string name="recognition_notification_processing">Atpažįstama…</string>
     <string name="recognition_notification_no_match">Atitikmenų nerasta</string>
     <string name="recognition_notification_failed">Atpažinti nepavyko</string>
-    <string name="listen_on_flow_music">Klausytis per „Flow Music“</string>
+    <string name="listen_on_flow_tune">Klausytis per „Flow Tune“</string>
     <string name="qs_tile_music_recognizer">Atpažinti muziką</string>
     <string name="flow_brain_beta">„Flow Brain“ (beta versija)</string>
     <string name="flow_brain_enable">Įjungti „Flow Brain“</string>

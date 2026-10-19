@@ -359,7 +359,7 @@
     <string name="listen_together_smart_resync">Розумна ресинхронізація мережі</string>
     <string name="listen_together_smart_resync_desc">Автоматично наздоганяти хоста після розриву з\'єднання</string>
     <string name="spotify_import_title">Імпортувати із Spotify</string>
-    <string name="spotify_import_desc">Підключіть Spotify, виберіть плейлісти та скопіюйте їх у локальні плейлісти Flow Music.</string>
+    <string name="spotify_import_desc">Підключіть Spotify, виберіть плейлісти та скопіюйте їх у локальні плейлісти Flow Tune.</string>
     <string name="spotify_connect">Підключити Spotify</string>
     <string name="spotify_refresh">Оновити бібліотеку Spotify</string>
     <string name="spotify_select_sources">Виберіть плейлисти Spotify</string>
@@ -385,7 +385,7 @@
     <string name="spotify_waiting_for_login">Очікування входу в Spotify</string>
     <string name="export_directory_unavailable">Не вдалося отримати доступ до папки експорту на цьому пристрої. Будь ласка, вкажіть її вручну.</string>
     <string name="loading">Завантаження</string>
-    <string name="listen_on_flow_music">Слухати на Flow Music</string>
+    <string name="listen_on_flow_tune">Слухати на Flow Tune</string>
     <string name="qs_tile_music_recognizer">Розпізнати музику</string>
     <string name="flow_brain_beta">Flow Brain (Бета)</string>
     <string name="flow_brain_enable">Увімкнути Flow Brain</string>

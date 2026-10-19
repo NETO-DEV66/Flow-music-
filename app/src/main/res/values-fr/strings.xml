@@ -3,7 +3,7 @@
 <!-- Upstream InnerTune strings -->
 <!-- Do not add new features here -->
 <!-- Try to re-use strings here, but be careful on its usage e.g. verb vs noun -->
-<!-- "InnerTune" is replaced with "flowmusic" -->
+<!-- "InnerTune" is replaced with "flowtune" -->
 <!-- Translators: Do not modify this file for translations, use InnerTune's Weblate instead. -->
 
 <resources>
@@ -458,7 +458,7 @@
     <string name="listen_together_smart_resync">Resynchronisation réseau intelligente</string>
     <string name="listen_together_smart_resync_desc">Rattraper automatiquement la lecture de l\'hôte après une perte de connexion</string>
     <string name="spotify_import_title">Importer depuis Spotify</string>
-    <string name="spotify_import_desc">Connectez Spotify, choisissez des playlists et dupliquez-les dans vos playlists locales Flow Music.</string>
+    <string name="spotify_import_desc">Connectez Spotify, choisissez des playlists et dupliquez-les dans vos playlists locales Flow Tune.</string>
     <string name="spotify_connect">Connecter Spotify</string>
     <string name="spotify_refresh">Actualiser la bibliothèque Spotify</string>
     <string name="spotify_select_sources">Sélectionner les playlists Spotify</string>
@@ -503,7 +503,7 @@
     <string name="recognition_notification_processing">Identification en cours…</string>
     <string name="recognition_notification_no_match">Aucun résultat trouvé</string>
     <string name="recognition_notification_failed">Échec de la reconnaissance</string>
-    <string name="listen_on_flow_music">Écouter sur Flow Music</string>
+    <string name="listen_on_flow_tune">Écouter sur Flow Tune</string>
     <string name="qs_tile_music_recognizer">Reconnaître la musique</string>
     <string name="listenbrainz_scrobbling">Scrobbling ListenBrainz</string>
     <string name="listenbrainz_scrobbling_description">Soumettre automatiquement vos titres écoutés à ListenBrainz</string>
@@ -663,7 +663,7 @@
     <string name="display_density_desc">Gérer les paramètres de densité d\'affichage</string>
     <string name="download_quality_title_desc">Gérer les paramètres de qualité de téléchargement</string>
     <string name="downloaded_songs_desc">Gérer les paramètres des titres téléchargés</string>
-    <string name="flowmusic_1_desc">Gérer les paramètres de Vivi Music (Fluide)</string>
+    <string name="flowtune_1_desc">Gérer les paramètres de Vivi Music (Fluide)</string>
     <string name="enable_desc">Activer ou désactiver</string>
     <string name="enable_authentication_desc">Activer ou désactiver l\'authentification</string>
     <string name="enable_dynamic_theme_desc">Activer ou désactiver le thème dynamique</string>

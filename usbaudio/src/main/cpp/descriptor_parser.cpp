@@ -3,7 +3,7 @@
 #include <cstring>
 #include <set>
 
-namespace com::flowmusic::usbaudio {
+namespace com::flowtune::usbaudio {
 
 ParsedDacCapabilities DescriptorParser::parse(const uint8_t* data, size_t size) {
     ParsedDacCapabilities caps;
@@ -174,4 +174,4 @@ ParsedDacCapabilities DescriptorParser::parse(const uint8_t* data, size_t size) 
     return caps;
 }
 
-} // namespace com::flowmusic::usbaudio
+} // namespace com::flowtune::usbaudio

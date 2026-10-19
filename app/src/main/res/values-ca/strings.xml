@@ -348,7 +348,7 @@
     <string name="listen_together_smart_resync">Resincronització intel·ligent de xarxa</string>
     <string name="listen_together_smart_resync_desc">Posi’s al dia automàticament amb l’amfitrió després d’una caiguda de la connexió</string>
     <string name="spotify_import_title">Importa des de Spotify</string>
-    <string name="spotify_import_desc">Connecteu Spotify, trieu llistes de reproducció i copieu-les a les llistes locals d’Flow Music.</string>
+    <string name="spotify_import_desc">Connecteu Spotify, trieu llistes de reproducció i copieu-les a les llistes locals d’Flow Tune.</string>
     <string name="spotify_connect">Connecta Spotify</string>
     <string name="spotify_refresh">Actualitza la col·lecció de Spotify</string>
     <string name="spotify_select_sources">Selecciona les llistes de Spotify</string>
@@ -409,7 +409,7 @@
     <string name="recognition_notification_processing">S\'està identificant…</string>
     <string name="recognition_notification_no_match">No s\'ha trobat cap coincidència</string>
     <string name="recognition_notification_failed">Ha fallat el reconeixement</string>
-    <string name="listen_on_flow_music">Escolta-ho a Flow Music</string>
+    <string name="listen_on_flow_tune">Escolta-ho a Flow Tune</string>
     <string name="qs_tile_music_recognizer">Reconeix música</string>
     <string name="flow_brain_beta">Flow Brain (beta)</string>
     <string name="flow_brain_enable">Activa Flow Brain</string>

@@ -68,7 +68,7 @@ jobs:
         id: apk
         run: |
           APK=$(find app/build/outputs/apk -name "*.apk" | head -1)
-          NAME="FlowMusic-${{ github.ref_name }}-universal-gms-release.apk"
+          NAME="FlowTune-${{ github.ref_name }}-universal-gms-release.apk"
           cp "$APK" "$NAME"
           echo "path=$NAME" >> "$GITHUB_OUTPUT"
           echo "sha256=$(sha256sum "$NAME" | cut -d' ' -f1)" >> "$GITHUB_OUTPUT"
@@ -80,7 +80,7 @@ jobs:
           files: ${{ steps.apk.outputs.path }}
           generate_release_notes: true
           body: |
-            ## Flow Music ${{ github.ref_name }}
+            ## Flow Tune ${{ github.ref_name }}
 
             Signed universal APK (GMS variant, all ABIs).
 
@@ -90,5 +90,5 @@ jobs:
             Verify the download with:
 
             ```bash
-            sha256sum FlowMusic-${{ github.ref_name }}-universal-gms-release.apk
+            sha256sum FlowTune-${{ github.ref_name }}-universal-gms-release.apk
             ```

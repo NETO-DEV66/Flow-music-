@@ -348,7 +348,7 @@
     <string name="listen_together_smart_resync">Risincronizzazione intelligente della rete</string>
     <string name="listen_together_smart_resync_desc">Raggiungi automaticamente l’host dopo una caduta di connessione</string>
     <string name="spotify_import_title">Importa da Spotify</string>
-    <string name="spotify_import_desc">Collega Spotify, scegli le playlist e specchiale in playlist Flow Music locali.</string>
+    <string name="spotify_import_desc">Collega Spotify, scegli le playlist e specchiale in playlist Flow Tune locali.</string>
     <string name="spotify_connect">Collega Spotify</string>
     <string name="spotify_refresh">Aggiorna la libreria Spotify</string>
     <string name="spotify_select_sources">Seleziona le playlist Spotify</string>
@@ -409,7 +409,7 @@
     <string name="recognition_notification_processing">Identificazione in corso…</string>
     <string name="recognition_notification_no_match">Nessuna corrispondenza trovata</string>
     <string name="recognition_notification_failed">Riconoscimento non riuscito</string>
-    <string name="listen_on_flow_music">Ascolta su Flow Music</string>
+    <string name="listen_on_flow_tune">Ascolta su Flow Tune</string>
     <string name="qs_tile_music_recognizer">Riconosci la musica</string>
     <string name="flow_brain_beta">Flow Brain (Beta)</string>
     <string name="flow_brain_enable">Abilita Flow Brain</string>

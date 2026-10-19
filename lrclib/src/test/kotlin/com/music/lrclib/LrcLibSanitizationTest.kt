@@ -1,6 +1,6 @@
 package com.music.lrclib
 
-import com.flowmusic.metadata.cleaner.MetadataCleaner
+import com.flowtune.metadata.cleaner.MetadataCleaner
 import org.junit.Assert.assertEquals
 import org.junit.Test
 

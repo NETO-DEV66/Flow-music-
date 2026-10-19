@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-  namespace = "com.flowmusic.dsp.audio"
+  namespace = "com.flowtune.dsp.audio"
   compileSdk = 37
   defaultConfig {
     minSdk = 26

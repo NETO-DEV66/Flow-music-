@@ -1,6 +1,6 @@
 package com.music.innertube
 
-import com.flowmusic.metadata.cleaner.ApiText
+import com.flowtune.metadata.cleaner.ApiText
 import com.music.innertube.models.Context
 import com.music.innertube.models.MediaInfo
 import com.music.innertube.models.ReturnYouTubeDislikeResponse

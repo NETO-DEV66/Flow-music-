@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/banner.png" alt="Flow Music Logo"/>
+  <img src="assets/banner.png" alt="Flow Tune Logo"/>
 
   <p><b>A modern Android music app with ad-free streaming, synced lyrics, offline playback, and an intuitive user experience.</b></p>
 </div>
@@ -8,18 +8,18 @@
 
 ## Overview
 
-Flow Music delivers a seamless, premium listening experience by leveraging YouTube Music's vast library — without the ads. It adds powerful extras including offline downloads, real-time synchronized lyrics, and environment-aware music recognition.
+Flow Tune delivers a seamless, premium listening experience by leveraging YouTube Music's vast library — without the ads. It adds powerful extras including offline downloads, real-time synchronized lyrics, and environment-aware music recognition.
 
 > [!IMPORTANT]
-> **Flow Music is completely free and ad-free.** You can install the APK from the [website](https://neto-dev66.github.io/Flow-music-/) or from the [Releases page](https://github.com/NETO-DEV66/Flow-music-/releases), and the app can check for and install new versions from inside the app (Settings → About → Updates).
+> **Flow Tune is completely free and ad-free.** You can install the APK from the [website](https://neto-dev66.github.io/Flow-tune-/) or from the [Releases page](https://github.com/NETO-DEV66/Flow-tune-/releases), and the app can check for and install new versions from inside the app (Settings → About → Updates).
 
 ---
 
-**[Website](https://neto-dev66.github.io/Flow-music-/)** · [Releases](https://github.com/NETO-DEV66/Flow-music-/releases) · [Issues](https://github.com/NETO-DEV66/Flow-music-/issues)
+**[Website](https://neto-dev66.github.io/Flow-tune-/)** · [Releases](https://github.com/NETO-DEV66/Flow-tune-/releases) · [Issues](https://github.com/NETO-DEV66/Flow-tune-/issues)
 
 ---
 
-- **GitHub**: [Flow Music repository](https://github.com/NETO-DEV66/Flow-music-)
+- **GitHub**: [Flow Tune repository](https://github.com/NETO-DEV66/Flow-tune-)
 
 ---
 
@@ -76,7 +76,7 @@ Flow Music delivers a seamless, premium listening experience by leveraging YouTu
 
 ### What's New
 
-> **Music DNA (New!)** — Instantly uncover the backstory of any track. Flow Music queries Genius for deep track annotations, and intelligently falls back to Wikipedia API extracts for regional or obscure tracks where crowd-sourced meanings are missing.
+> **Music DNA (New!)** — Instantly uncover the backstory of any track. Flow Tune queries Genius for deep track annotations, and intelligently falls back to Wikipedia API extracts for regional or obscure tracks where crowd-sourced meanings are missing.
 
 <br>
 
@@ -156,7 +156,7 @@ Flow Music delivers a seamless, premium listening experience by leveraging YouTu
 
 ### Android Installation
 
-Download the latest pre-compiled APK from the [Releases Page](https://github.com/NETO-DEV66/Flow-music-/releases/latest).
+Download the latest pre-compiled APK from the [Releases Page](https://github.com/NETO-DEV66/Flow-tune-/releases/latest).
 
 <details>
 <summary><b>Building from Source</b></summary>
@@ -165,8 +165,8 @@ Download the latest pre-compiled APK from the [Releases Page](https://github.com
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/NETO-DEV66/Flow-music-.git
-   cd Flow-Music
+   git clone https://github.com/NETO-DEV66/Flow-tune-.git
+   cd Flow-Tune
    ```
 
 2. **Configure Android SDK**
@@ -182,7 +182,7 @@ Download the latest pre-compiled APK from the [Releases Page](https://github.com
    Firebase is required for analytics and crash reporting. See the instructions in [SETUP.md](SETUP.md#3-configure-firebase-optional) for adding your `google-services.json`.
 
 4. **Build the Application**
-   Flow Music has two build variants: **FOSS** (without Google Play Services / Cast) and **GMS** (with Cast support).
+   Flow Tune has two build variants: **FOSS** (without Google Play Services / Cast) and **GMS** (with Cast support).
 
    - To build the **FOSS** Universal Debug variant:
      ```bash
@@ -201,7 +201,7 @@ Download the latest pre-compiled APK from the [Releases Page](https://github.com
 
 ## Support the Project
 
-If Flow Music has been useful to you, consider supporting its development.
+If Flow Tune has been useful to you, consider supporting its development.
 
 <div align="left">
   <table style="margin: 0 auto; border-collapse: collapse; border: none;">
@@ -221,7 +221,7 @@ If Flow Music has been useful to you, consider supporting its development.
 
 ## Contributors
 
-Without the support of this incredible open-source community, none of this would be possible. Thank you to everyone who has contributed to Flow Music!
+Without the support of this incredible open-source community, none of this would be possible. Thank you to everyone who has contributed to Flow Tune!
 
 <!-- readme: contributors -start -->
 <table>
@@ -234,7 +234,7 @@ Without the support of this incredible open-source community, none of this would
 
 ## Special Thanks
 
-Flow Music stands on the shoulders of several excellent open-source projects. Sincere thanks to:
+Flow Tune stands on the shoulders of several excellent open-source projects. Sincere thanks to:
 
 | Project                                                                                                                   | Description                                         |
 | :------------------------------------------------------------------------------------------------------------------------ | :-------------------------------------------------- |
@@ -251,15 +251,15 @@ Flow Music stands on the shoulders of several excellent open-source projects. Si
 
 ### 1. 100% Free, Open-Source & Strictly Non-Commercial
 
-Flow Music is a fully open-source project (FOSS) created purely for educational purposes and personal use. We do not sell this application, nor do we monetize it in any way. There are no advertisements, no premium features, no subscriptions, and no hidden fees within the app. This project has absolutely no commercial value or financial intent.
+Flow Tune is a fully open-source project (FOSS) created purely for educational purposes and personal use. We do not sell this application, nor do we monetize it in any way. There are no advertisements, no premium features, no subscriptions, and no hidden fees within the app. This project has absolutely no commercial value or financial intent.
 
 ### 2. A Custom Browser with Content Filtering
 
-Flow Music acts strictly as a specialized, third-party web browser and client. It simply parses the publicly available website content and APIs of YouTube and YouTube Music, rendering them in a custom user interface. The ad-free experience it provides is fundamentally no different from using a standard web browser (like Chrome, Firefox, or Brave) equipped with a common ad-blocking extension (such as uBlock Origin).
+Flow Tune acts strictly as a specialized, third-party web browser and client. It simply parses the publicly available website content and APIs of YouTube and YouTube Music, rendering them in a custom user interface. The ad-free experience it provides is fundamentally no different from using a standard web browser (like Chrome, Firefox, or Brave) equipped with a common ad-blocking extension (such as uBlock Origin).
 
 ### 3. Support Content Creators
 
-We deeply respect the hard work of artists, musicians, and content creators. We strongly encourage all users to subscribe to [YouTube Premium](https://www.youtube.com/premium). Purchasing a Premium subscription is the best way to financially support the creators you listen to and ensure the continued growth of the platform. Flow Music is built as a proof-of-concept for developers and enthusiasts, not to harm creators' revenues.
+We deeply respect the hard work of artists, musicians, and content creators. We strongly encourage all users to subscribe to [YouTube Premium](https://www.youtube.com/premium). Purchasing a Premium subscription is the best way to financially support the creators you listen to and ensure the continued growth of the platform. Flow Tune is built as a proof-of-concept for developers and enthusiasts, not to harm creators' revenues.
 
 ### 4. No Hosting of Copyrighted Material
 
@@ -267,7 +267,7 @@ We do not host, upload, distribute, or store any audio, video, or copyrighted me
 
 ### 5. User Responsibility & Legal Contact
 
-The software is provided "AS IS", without warranty of any kind. The developers of Flow Music do not encourage or condone piracy. Users are solely responsible for ensuring their usage of this app complies with their local copyright laws and the Terms of Service of the platforms they access.
+The software is provided "AS IS", without warranty of any kind. The developers of Flow Tune do not encourage or condone piracy. Users are solely responsible for ensuring their usage of this app complies with their local copyright laws and the Terms of Service of the platforms they access.
 
 Because we do not host any media files, we cannot process DMCA takedown requests for audio or video content. However, if you represent a copyright holder or have legal concerns regarding the open-source code itself, please contact us via email at: [NETO-DEV66@users.noreply.github.com](mailto:NETO-DEV66@users.noreply.github.com)
 

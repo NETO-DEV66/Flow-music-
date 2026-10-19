@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-  namespace = "com.flowmusic.lyrics"
+  namespace = "com.flowtune.lyrics"
   compileSdk = 37
   defaultConfig { minSdk = 26 }
   compileOptions {

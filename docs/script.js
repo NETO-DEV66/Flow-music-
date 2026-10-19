@@ -1,7 +1,7 @@
 /* ============================================================
-   Flow Music — landing page behaviour
+   Flow Tune — landing page behaviour
    ============================================================ */
-const REPO = "NETO-DEV66/Flow-music-";
+const REPO = "NETO-DEV66/Flow-tune-";
 const RELEASES = `https://github.com/${REPO}/releases`;
 const SNAPSHOT = "release.json";
 const LATEST_API = `https://api.github.com/repos/${REPO}/releases/latest`;

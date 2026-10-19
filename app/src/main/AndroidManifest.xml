@@ -63,7 +63,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="false"
         android:largeHeap="true"
-        android:theme="@style/Theme.flowmusic"
+        android:theme="@style/Theme.flowtune"
         tools:targetApi="tiramisu">
         <uses-library
             android:name="org.apache.http.legacy"
@@ -72,7 +72,7 @@
         <activity
             android:name=".ui.screens.CrashActivity"
             android:exported="false"
-            android:theme="@style/Theme.flowmusic"
+            android:theme="@style/Theme.flowtune"
             android:excludeFromRecents="true"
             android:process=":crash" />
 
@@ -80,7 +80,7 @@
             android:name=".MainActivity"
             android:exported="true"
             android:launchMode="singleTask"
-            android:theme="@style/Theme.flowmusic"
+            android:theme="@style/Theme.flowtune"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -120,11 +120,11 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
 
-                <data android:scheme="flowmusic" />
+                <data android:scheme="flowtune" />
                 <data android:host="listen" />
             </intent-filter>
 
-            <!-- Flow Music Share Links -->
+            <!-- Flow Tune Share Links -->
             <intent-filter android:autoVerify="true">
                 <action android:name="android.intent.action.VIEW" />
 
@@ -311,9 +311,9 @@
             android:label="@string/widget_music_player">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-                <action android:name="com.flowmusic.app.widget.PLAY_PAUSE" />
-                <action android:name="com.flowmusic.app.widget.LIKE" />
-                <action android:name="com.flowmusic.app.widget.UPDATE_WIDGET" />
+                <action android:name="com.flowtune.app.widget.PLAY_PAUSE" />
+                <action android:name="com.flowtune.app.widget.LIKE" />
+                <action android:name="com.flowtune.app.widget.UPDATE_WIDGET" />
             </intent-filter>
 
             <meta-data
@@ -328,9 +328,9 @@
             android:label="@string/widget_turntable">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-                <action android:name="com.flowmusic.app.widget.TURNTABLE_PLAY_PAUSE" />
-                <action android:name="com.flowmusic.app.widget.TURNTABLE_LIKE" />
-                <action android:name="com.flowmusic.app.widget.UPDATE_TURNTABLE_WIDGET" />
+                <action android:name="com.flowtune.app.widget.TURNTABLE_PLAY_PAUSE" />
+                <action android:name="com.flowtune.app.widget.TURNTABLE_LIKE" />
+                <action android:name="com.flowtune.app.widget.UPDATE_TURNTABLE_WIDGET" />
             </intent-filter>
 
             <meta-data
@@ -341,7 +341,7 @@
         <!-- Google Cast Options Provider -->
         <meta-data
             android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME"
-            android:value="com.flowmusic.app.cast.CastOptionsProvider" />
+            android:value="com.flowtune.app.cast.CastOptionsProvider" />
         <!-- Google Cast Reconnection Service (required by setEnableReconnectionService(true)) -->
         <service
             android:name="com.google.android.gms.cast.framework.ReconnectionService"
@@ -367,11 +367,11 @@
             android:label="@string/widget_modern_name">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-                <action android:name="com.flowmusic.app.widget.PLAY_PAUSE" />
-                <action android:name="com.flowmusic.app.widget.LIKE" />
-                <action android:name="com.flowmusic.app.widget.NEXT" />
-                <action android:name="com.flowmusic.app.widget.PREVIOUS" />
-                <action android:name="com.flowmusic.app.widget.UPDATE_WIDGET" />
+                <action android:name="com.flowtune.app.widget.PLAY_PAUSE" />
+                <action android:name="com.flowtune.app.widget.LIKE" />
+                <action android:name="com.flowtune.app.widget.NEXT" />
+                <action android:name="com.flowtune.app.widget.PREVIOUS" />
+                <action android:name="com.flowtune.app.widget.UPDATE_WIDGET" />
             </intent-filter>
             <meta-data
                 android:name="android.appwidget.provider"
@@ -385,11 +385,11 @@
             android:label="@string/widget_square_name">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-                <action android:name="com.flowmusic.app.widget.PLAY_PAUSE" />
-                <action android:name="com.flowmusic.app.widget.LIKE" />
-                <action android:name="com.flowmusic.app.widget.NEXT" />
-                <action android:name="com.flowmusic.app.widget.PREVIOUS" />
-                <action android:name="com.flowmusic.app.widget.UPDATE_WIDGET" />
+                <action android:name="com.flowtune.app.widget.PLAY_PAUSE" />
+                <action android:name="com.flowtune.app.widget.LIKE" />
+                <action android:name="com.flowtune.app.widget.NEXT" />
+                <action android:name="com.flowtune.app.widget.PREVIOUS" />
+                <action android:name="com.flowtune.app.widget.UPDATE_WIDGET" />
             </intent-filter>
             <meta-data
                 android:name="android.appwidget.provider"
@@ -403,11 +403,11 @@
             android:label="@string/widget_showcase_name">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-                <action android:name="com.flowmusic.app.widget.PLAY_PAUSE" />
-                <action android:name="com.flowmusic.app.widget.LIKE" />
-                <action android:name="com.flowmusic.app.widget.NEXT" />
-                <action android:name="com.flowmusic.app.widget.PREVIOUS" />
-                <action android:name="com.flowmusic.app.widget.UPDATE_WIDGET" />
+                <action android:name="com.flowtune.app.widget.PLAY_PAUSE" />
+                <action android:name="com.flowtune.app.widget.LIKE" />
+                <action android:name="com.flowtune.app.widget.NEXT" />
+                <action android:name="com.flowtune.app.widget.PREVIOUS" />
+                <action android:name="com.flowtune.app.widget.UPDATE_WIDGET" />
             </intent-filter>
             <meta-data
                 android:name="android.appwidget.provider"
@@ -421,11 +421,11 @@
             android:label="@string/widget_slim_name">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-                <action android:name="com.flowmusic.app.widget.PLAY_PAUSE" />
-                <action android:name="com.flowmusic.app.widget.LIKE" />
-                <action android:name="com.flowmusic.app.widget.NEXT" />
-                <action android:name="com.flowmusic.app.widget.PREVIOUS" />
-                <action android:name="com.flowmusic.app.widget.UPDATE_WIDGET" />
+                <action android:name="com.flowtune.app.widget.PLAY_PAUSE" />
+                <action android:name="com.flowtune.app.widget.LIKE" />
+                <action android:name="com.flowtune.app.widget.NEXT" />
+                <action android:name="com.flowtune.app.widget.PREVIOUS" />
+                <action android:name="com.flowtune.app.widget.UPDATE_WIDGET" />
             </intent-filter>
             <meta-data
                 android:name="android.appwidget.provider"
@@ -439,11 +439,11 @@
             android:label="@string/widget_vinyl_name">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-                <action android:name="com.flowmusic.app.widget.PLAY_PAUSE" />
-                <action android:name="com.flowmusic.app.widget.LIKE" />
-                <action android:name="com.flowmusic.app.widget.NEXT" />
-                <action android:name="com.flowmusic.app.widget.PREVIOUS" />
-                <action android:name="com.flowmusic.app.widget.UPDATE_WIDGET" />
+                <action android:name="com.flowtune.app.widget.PLAY_PAUSE" />
+                <action android:name="com.flowtune.app.widget.LIKE" />
+                <action android:name="com.flowtune.app.widget.NEXT" />
+                <action android:name="com.flowtune.app.widget.PREVIOUS" />
+                <action android:name="com.flowtune.app.widget.UPDATE_WIDGET" />
             </intent-filter>
             <meta-data
                 android:name="android.appwidget.provider"
@@ -457,11 +457,11 @@
             android:label="@string/widget_vintage_name">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-                <action android:name="com.flowmusic.app.widget.PLAY_PAUSE" />
-                <action android:name="com.flowmusic.app.widget.LIKE" />
-                <action android:name="com.flowmusic.app.widget.NEXT" />
-                <action android:name="com.flowmusic.app.widget.PREVIOUS" />
-                <action android:name="com.flowmusic.app.widget.UPDATE_WIDGET" />
+                <action android:name="com.flowtune.app.widget.PLAY_PAUSE" />
+                <action android:name="com.flowtune.app.widget.LIKE" />
+                <action android:name="com.flowtune.app.widget.NEXT" />
+                <action android:name="com.flowtune.app.widget.PREVIOUS" />
+                <action android:name="com.flowtune.app.widget.UPDATE_WIDGET" />
             </intent-filter>
             <meta-data
                 android:name="android.appwidget.provider"
@@ -475,14 +475,14 @@
             android:label="@string/widget_adaptive_name">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-                <action android:name="com.flowmusic.app.widget.PLAY_PAUSE" />
-                <action android:name="com.flowmusic.app.widget.NEXT" />
-                <action android:name="com.flowmusic.app.widget.PREVIOUS" />
-                <action android:name="com.flowmusic.app.widget.SHUFFLE" />
-                <action android:name="com.flowmusic.app.widget.REPEAT" />
-                <action android:name="com.flowmusic.app.widget.SKIP_TO_QUEUE_ITEM" />
-                <action android:name="com.flowmusic.widget.SKIP_TO_QUEUE_ITEM" />
-                <action android:name="com.flowmusic.app.widget.UPDATE_WIDGET" />
+                <action android:name="com.flowtune.app.widget.PLAY_PAUSE" />
+                <action android:name="com.flowtune.app.widget.NEXT" />
+                <action android:name="com.flowtune.app.widget.PREVIOUS" />
+                <action android:name="com.flowtune.app.widget.SHUFFLE" />
+                <action android:name="com.flowtune.app.widget.REPEAT" />
+                <action android:name="com.flowtune.app.widget.SKIP_TO_QUEUE_ITEM" />
+                <action android:name="com.flowtune.widget.SKIP_TO_QUEUE_ITEM" />
+                <action android:name="com.flowtune.app.widget.UPDATE_WIDGET" />
             </intent-filter>
             <meta-data
                 android:name="android.appwidget.provider"
@@ -509,9 +509,9 @@
             android:label="@string/widget_recognizer_name">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-                <action android:name="com.flowmusic.app.widget.recognizer.TAP_MIC" />
-                <action android:name="com.flowmusic.app.widget.recognizer.UPDATE" />
-                <action android:name="com.flowmusic.app.widget.recognizer.RESET" />
+                <action android:name="com.flowtune.app.widget.recognizer.TAP_MIC" />
+                <action android:name="com.flowtune.app.widget.recognizer.UPDATE" />
+                <action android:name="com.flowtune.app.widget.recognizer.RESET" />
             </intent-filter>
 
             <meta-data

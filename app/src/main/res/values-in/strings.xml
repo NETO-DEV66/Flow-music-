@@ -329,7 +329,7 @@
     <string name="listen_together_smart_resync">Sinkronisasi Ulang Jaringan Cerdas</string>
     <string name="listen_together_smart_resync_desc">Secara otomatis mengejar ketertinggalan dari host setelah putus sambungan</string>
     <string name="spotify_import_title">Impor dari Spotify</string>
-    <string name="spotify_import_desc">Hubungkan Spotify, pilih daftar putar, dan cerminkan ke dalam daftar putar Flow Music lokal.</string>
+    <string name="spotify_import_desc">Hubungkan Spotify, pilih daftar putar, dan cerminkan ke dalam daftar putar Flow Tune lokal.</string>
     <string name="spotify_connect">Hubungkan Spotify</string>
     <string name="spotify_refresh">Segarkan pustaka Spotify</string>
     <string name="spotify_select_sources">Pilih daftar putar Spotify</string>
@@ -389,7 +389,7 @@
     <string name="recognition_notification_processing">Mengidentifikasi…</string>
     <string name="recognition_notification_no_match">Tidak ditemukan kecocokan</string>
     <string name="recognition_notification_failed">Pengenalan gagal</string>
-    <string name="listen_on_flow_music">Dengarkan di Flow Music</string>
+    <string name="listen_on_flow_tune">Dengarkan di Flow Tune</string>
     <string name="qs_tile_music_recognizer">Kenali musik</string>
     <string name="flow_brain_beta">Flow Brain (Beta)</string>
     <string name="flow_brain_enable">Aktifkan Flow Brain</string>

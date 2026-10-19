@@ -350,7 +350,7 @@
     <string name="listen_together_smart_resync">Resincronizare inteligentă a rețelei</string>
     <string name="listen_together_smart_resync_desc">Prinde din urmă automat gazda după o cădere a conexiunii</string>
     <string name="spotify_import_title">Importă din Spotify</string>
-    <string name="spotify_import_desc">Conectează Spotify, alege playlisturile și oglindește-le în playlisturi locale Flow Music.</string>
+    <string name="spotify_import_desc">Conectează Spotify, alege playlisturile și oglindește-le în playlisturi locale Flow Tune.</string>
     <string name="spotify_connect">Conectează Spotify</string>
     <string name="spotify_refresh">Reîmprospătează biblioteca Spotify</string>
     <string name="spotify_select_sources">Selectează playlisturile Spotify</string>
@@ -410,7 +410,7 @@
     <string name="recognition_notification_processing">Se identifică…</string>
     <string name="recognition_notification_no_match">Nu s-a găsit nicio potrivire</string>
     <string name="recognition_notification_failed">Recunoașterea a eșuat</string>
-    <string name="listen_on_flow_music">Ascultă în Flow Music</string>
+    <string name="listen_on_flow_tune">Ascultă în Flow Tune</string>
     <string name="qs_tile_music_recognizer">Recunoaște muzica</string>
     <string name="flow_brain_beta">Flow Brain (Beta)</string>
     <string name="flow_brain_enable">Activează Flow Brain</string>

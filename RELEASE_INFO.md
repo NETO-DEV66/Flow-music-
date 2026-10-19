@@ -1,9 +1,21 @@
-# Flow Music Releases
+# Flow Tune Releases
 
-This document tracks all available releases for Flow Music. 
+This document tracks all available releases for Flow Tune. 
 
-## [v1.4.5] - 2026-10-19 (Latest)
-[Download on GitHub](https://github.com/NETO-DEV66/Flow-music-/releases/tag/v1.4.5)
+## [v1.5.0] - 2026-10-19 (Latest)
+[Download on GitHub](https://github.com/NETO-DEV66/Flow-tune-/releases/tag/v1.5.0)
+
+**Renamed to Flow Tune**
+
+- The app is now called **Flow Tune** everywhere: the launcher label, the in-app text, the website, the release assets and the Android application ID (`com.flowtune.app`).
+- The rename is a clean break for the Android package name, so **Flow Tune installs alongside an older Flow Music build** instead of upgrading it. Your playlists, downloads and settings stay with the old install; the new app starts fresh.
+- Package namespace, Kotlin sources, JNI native symbols, ProGuard rules, the Room schema directory and every URL were updated together.
+
+> [!IMPORTANT]
+> Because the application ID changed, this is a side-by-side install, not an in-place update. An installed Flow Music build will **not** receive this as an automatic update.
+
+## [v1.4.5] - 2026-10-19
+[Download on GitHub](https://github.com/NETO-DEV66/Flow-tune-/releases/tag/v1.4.5)
 
 **New Icon and Branding**
 - The app icon is new: a soundwave mark in the brand violet-to-cyan gradient on a deep near-black tile. It replaces the red mark inherited from the upstream project.
@@ -16,10 +28,10 @@ This document tracks all available releases for Flow Music.
 - A download notification referenced an icon that did not exist, which broke the build.
 
 ## [v1.4.4] - 2026-10-19
-[Download on GitHub](https://github.com/NETO-DEV66/Flow-music-/releases/tag/v1.4.4)
+[Download on GitHub](https://github.com/NETO-DEV66/Flow-tune-/releases/tag/v1.4.4)
 
 **Identity**
-- The project now lives at [NETO-DEV66/Flow-music-](https://github.com/NETO-DEV66/Flow-music-); all in-app links, update checks and repository references were repointed to it.
+- The project now lives at [NETO-DEV66/Flow-tune-](https://github.com/NETO-DEV66/Flow-tune-); all in-app links, update checks and repository references were repointed to it.
 
 **Support**
 - Donations are now a single UPI ID: `mrsameer1906@okhdfcbank`, available in the app (About and the welcome dialog), the README and the website. The previous Buy Me a Coffee, Patreon and cryptocurrency options were removed.
@@ -32,7 +44,7 @@ This document tracks all available releases for Flow Music.
 - Removed unused social and donation assets.
 
 ## [v1.2.2] - 2026-08-28
-[Download on GitHub](https://github.com/NETO-DEV66/Flow-music-/releases/tag/v1.2.2)
+[Download on GitHub](https://github.com/NETO-DEV66/Flow-tune-/releases/tag/v1.2.2)
 
 **Bug Fixes**
 - Fixed a crash that occurred when adding a song to a playlist, album, or artist before it was fully loaded.
@@ -47,9 +59,9 @@ This document tracks all available releases for Flow Music.
 - Updated select app components to their latest stable versions for improved reliability.
 
 ## [v1.2.1] - 2026-08-28
-[Download on GitHub](https://github.com/NETO-DEV66/Flow-music-/releases/tag/v1.2.1)
+[Download on GitHub](https://github.com/NETO-DEV66/Flow-tune-/releases/tag/v1.2.1)
 
-I am pleased to announce the initial release of the updated Flow Music repository.
+I am pleased to announce the initial release of the updated Flow Tune repository.
 
 Recently, the project was subjected to a legal takedown notice. Since then, I have taken all necessary actions and made the required adjustments to the codebase and documentation to ensure full legal compliance. 
 

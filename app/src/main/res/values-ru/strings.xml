@@ -360,7 +360,7 @@
     <string name="listen_together_smart_resync">Умная повторная синхронизация сети</string>
     <string name="listen_together_smart_resync_desc">Автоматически подстраиваться под ведущего после обрыва соединения</string>
     <string name="spotify_import_title">Импорт из Spotify</string>
-    <string name="spotify_import_desc">Подключите Spotify, выберите плейлисты и зеркально отразите их в локальных плейлистах Flow Music.</string>
+    <string name="spotify_import_desc">Подключите Spotify, выберите плейлисты и зеркально отразите их в локальных плейлистах Flow Tune.</string>
     <string name="spotify_connect">Подключить Spotify</string>
     <string name="spotify_refresh">Обновить библиотеку Spotify</string>
     <string name="spotify_select_sources">Выбрать плейлисты Spotify</string>
@@ -420,7 +420,7 @@
     <string name="recognition_notification_processing">Определяю…</string>
     <string name="recognition_notification_no_match">Нет совпадений</string>
     <string name="recognition_notification_failed">Ошибка распознавания</string>
-    <string name="listen_on_flow_music">Слушать в Flow Music</string>
+    <string name="listen_on_flow_tune">Слушать в Flow Tune</string>
     <string name="qs_tile_music_recognizer">Распознать музыку</string>
     <string name="flow_brain_beta">Flow Brain (Бета)</string>
     <string name="flow_brain_enable">Включить Flow Brain</string>

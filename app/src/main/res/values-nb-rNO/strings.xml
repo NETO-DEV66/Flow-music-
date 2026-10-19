@@ -336,7 +336,7 @@
     <string name="listen_together_smart_resync">Smart nettverkssynkronisering</string>
     <string name="listen_together_smart_resync_desc">Ta automatisk igjen verten etter et tilkoblingsbrudd</string>
     <string name="spotify_import_title">Importer fra Spotify</string>
-    <string name="spotify_import_desc">Koble til Spotify, velg spillelister, og speil dem til lokale Flow Music-spillelister.</string>
+    <string name="spotify_import_desc">Koble til Spotify, velg spillelister, og speil dem til lokale Flow Tune-spillelister.</string>
     <string name="spotify_connect">Koble til Spotify</string>
     <string name="spotify_refresh">Oppdater Spotify-biblioteket</string>
     <string name="spotify_select_sources">Velg Spotify-spillelister</string>
@@ -399,7 +399,7 @@
     <string name="recognition_notification_processing">Identifiserer…</string>
     <string name="recognition_notification_no_match">Fant ingen treff</string>
     <string name="recognition_notification_failed">Gjenkjenningen mislyktes</string>
-    <string name="listen_on_flow_music">Lytt på Flow Music</string>
+    <string name="listen_on_flow_tune">Lytt på Flow Tune</string>
     <string name="qs_tile_music_recognizer">Gjenkjenn musikk</string>
     <string name="flow_brain_beta">Flow Brain (beta)</string>
     <string name="flow_brain_enable">Aktiver Flow Brain</string>

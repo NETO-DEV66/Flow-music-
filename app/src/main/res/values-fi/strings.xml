@@ -339,7 +339,7 @@
     <string name="listen_together_smart_resync">Älykäs verkon uudelleensynkronointi</string>
     <string name="listen_together_smart_resync_desc">Tavoita isäntä automaattisesti yhteyden katkeamisen jälkeen</string>
     <string name="spotify_import_title">Tuo Spotifysta</string>
-    <string name="spotify_import_desc">Yhdistä Spotify, valitse soittolistat ja peilaa ne paikallisiksi Flow Music-soittolistoiksi.</string>
+    <string name="spotify_import_desc">Yhdistä Spotify, valitse soittolistat ja peilaa ne paikallisiksi Flow Tune-soittolistoiksi.</string>
     <string name="spotify_connect">Yhdistä Spotify</string>
     <string name="spotify_refresh">Päivitä Spotify-kirjasto</string>
     <string name="spotify_select_sources">Valitse Spotify-soittolistat</string>
@@ -399,7 +399,7 @@
     <string name="recognition_notification_processing">Tunnistetaan…</string>
     <string name="recognition_notification_no_match">Vastaavuutta ei löytynyt</string>
     <string name="recognition_notification_failed">Tunnistus epäonnistui</string>
-    <string name="listen_on_flow_music">Kuuntele Flow Musicissa</string>
+    <string name="listen_on_flow_tune">Kuuntele Flow Tuneissa</string>
     <string name="qs_tile_music_recognizer">Tunnista musiikki</string>
     <string name="flow_brain_beta">Flow Brain (beeta)</string>
     <string name="flow_brain_enable">Ota Flow Brain käyttöön</string>

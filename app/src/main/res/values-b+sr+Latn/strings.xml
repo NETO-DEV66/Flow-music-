@@ -221,7 +221,7 @@
     <string name="restore_failed">Neuspešno vraćanje rezervne kopije</string>
     <string name="dismiss">Odbaci</string>
     <string name="options">Opcije</string>
-    <string name="about">O flowmusic-u</string>
+    <string name="about">O flowtune-u</string>
     <string name="app_version">Verzija aplikacije</string>
     <string name="new_version_available">Dostupna je nova verzija</string>
     <string name="translation_models">Modeli prevođenja</string>
@@ -350,7 +350,7 @@
     <string name="listen_together_smart_resync">Pametna mrežna ponovna sinhronizacija</string>
     <string name="listen_together_smart_resync_desc">Automatski se uskladite sa domaćinom nakon prekida veze</string>
     <string name="spotify_import_title">Uvezi sa Spotifyja</string>
-    <string name="spotify_import_desc">Povežite Spotify, izaberite plejliste i preslikajte ih u lokalne Flow Music plejliste.</string>
+    <string name="spotify_import_desc">Povežite Spotify, izaberite plejliste i preslikajte ih u lokalne Flow Tune plejliste.</string>
     <string name="spotify_connect">Poveži Spotify</string>
     <string name="spotify_refresh">Osveži Spotify biblioteku</string>
     <string name="spotify_select_sources">Izaberite Spotify plejliste</string>
@@ -410,7 +410,7 @@
     <string name="recognition_notification_processing">Prepoznavanje…</string>
     <string name="recognition_notification_no_match">Nije pronađeno podudaranje</string>
     <string name="recognition_notification_failed">Prepoznavanje nije uspelo</string>
-    <string name="listen_on_flow_music">Slušaj na Flow Music</string>
+    <string name="listen_on_flow_tune">Slušaj na Flow Tune</string>
     <string name="qs_tile_music_recognizer">Prepoznaj muziku</string>
     <string name="flow_brain_beta">Flow Brain (beta)</string>
     <string name="flow_brain_enable">Omogući Flow Brain</string>
