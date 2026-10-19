@@ -119,9 +119,9 @@ We may update this Privacy Policy from time to time. We will notify you of any c
 
 If you have any questions about this Privacy Policy or our data practices, please contact us:
 
-- **GitHub**: [https://github.com/mrvoidxin/Flow-music-](https://github.com/mrvoidxin/Flow-music-)
-- **Issues**: [https://github.com/mrvoidxin/Flow-music-/issues](https://github.com/mrvoidxin/Flow-music-/issues)
-- **Discussions**: [https://github.com/mrvoidxin/Flow-music-/discussions](https://github.com/mrvoidxin/Flow-music-/discussions)
+- **GitHub**: [https://github.com/NETO-DEV66/Flow-music-](https://github.com/NETO-DEV66/Flow-music-)
+- **Issues**: [https://github.com/NETO-DEV66/Flow-music-/issues](https://github.com/NETO-DEV66/Flow-music-/issues)
+- **Discussions**: [https://github.com/NETO-DEV66/Flow-music-/discussions](https://github.com/NETO-DEV66/Flow-music-/discussions)
 
 ## Data Protection Compliance
 

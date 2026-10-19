@@ -19,7 +19,7 @@ data class flowmusicCanvasManifest(val items: List<flowmusicCanvasItem> = emptyL
 @Serializable data class flowmusicCanvasItem(val song: String, val artist: String, val url: String)
 
 object flowmusicCanvasProvider {
-  private const val BASE_URL = "https://raw.githubusercontent.com/mrvoidxin/Flow-music-/main/app/canvas.json"
+  private const val BASE_URL = "https://raw.githubusercontent.com/NETO-DEV66/Flow-music-/main/app/canvas.json"
 
   private val json = Json {
     ignoreUnknownKeys = true

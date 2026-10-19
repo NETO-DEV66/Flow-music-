@@ -20,7 +20,7 @@ data class ListenTogetherServer(
 
 object ListenTogetherServers {
   private const val SERVER_JSON_URL =
-    "https://raw.githubusercontent.com/mrvoidxin/Flow-music-/refs/heads/main/app/server.json"
+    "https://raw.githubusercontent.com/NETO-DEV66/Flow-music-/refs/heads/main/app/server.json"
 
   private val _servers =
     MutableStateFlow(

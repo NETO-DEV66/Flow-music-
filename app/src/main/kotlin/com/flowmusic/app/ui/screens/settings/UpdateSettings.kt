@@ -86,7 +86,7 @@ fun UpdateSettings(
     kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.IO) {
       try {
         val url =
-          java.net.URL("https://api.github.com/repos/mrvoidxin/Flow-music-/releases/latest")
+          java.net.URL("https://api.github.com/repos/NETO-DEV66/Flow-music-/releases/latest")
         val json = url.openStream().bufferedReader().use { it.readText() }
         val targetRelease = JSONObject(json)
         releaseNotes = targetRelease.getString("body")
@@ -133,7 +133,7 @@ fun UpdateSettings(
               }
             },
             onClick = {
-              val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/mrvoidxin/Flow-music-"))
+              val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/NETO-DEV66/Flow-music-"))
               context.startActivity(intent)
             }
           )

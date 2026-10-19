@@ -15,7 +15,7 @@ We release patches for security vulnerabilities in the following versions:
 If you discover a security vulnerability in Flow Music, please report it responsibly:
 
 1. **Do NOT** create a public GitHub issue
-2. Email us at: [mrvoidxin@users.noreply.github.com](mailto:mrvoidxin@users.noreply.github.com)
+2. Email us at: [NETO-DEV66@users.noreply.github.com](mailto:NETO-DEV66@users.noreply.github.com)
 3. Include the following information:
    - Description of the vulnerability
    - Steps to reproduce
@@ -60,7 +60,7 @@ Flow Music is committed to user privacy:
 
 For security-related questions or to report vulnerabilities:
 
-- Email: [mrvoidxin@users.noreply.github.com](mailto:mrvoidxin@users.noreply.github.com)
+- Email: [NETO-DEV66@users.noreply.github.com](mailto:NETO-DEV66@users.noreply.github.com)
 - GitHub: Create a private security advisory
 
 Thank you for helping keep Flow Music secure!

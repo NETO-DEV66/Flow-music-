@@ -3,7 +3,7 @@
 This document tracks all available releases for Flow Music. 
 
 ## [v1.2.2] - 2026-08-28 (Latest)
-[Download on GitHub](https://github.com/mrvoidxin/Flow-music-/releases/tag/v1.2.2)
+[Download on GitHub](https://github.com/NETO-DEV66/Flow-music-/releases/tag/v1.2.2)
 
 **Bug Fixes**
 - Fixed a crash that occurred when adding a song to a playlist, album, or artist before it was fully loaded.
@@ -18,7 +18,7 @@ This document tracks all available releases for Flow Music.
 - Updated select app components to their latest stable versions for improved reliability.
 
 ## [v1.2.1] - 2026-08-28
-[Download on GitHub](https://github.com/mrvoidxin/Flow-music-/releases/tag/v1.2.1)
+[Download on GitHub](https://github.com/NETO-DEV66/Flow-music-/releases/tag/v1.2.1)
 
 I am pleased to announce the initial release of the updated Flow Music repository.
 

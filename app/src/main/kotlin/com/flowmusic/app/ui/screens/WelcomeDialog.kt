@@ -59,49 +59,21 @@ fun WelcomeDialog(onDismissRequest: () -> Unit) {
 
         WelcomeSectionCard(title = "Follow Developer") {
           WelcomeActionRow(
-            icon = painterResource(R.drawable.ic_instagram_new),
-            title = "Instagram",
-            subtitle = "@mrvoidxin",
-            onClick = { uriHandler.openUri("https://instagram.com/mrvoidxin") }
-          )
-          WelcomeDivider()
-          WelcomeActionRow(
-            icon = painterResource(R.drawable.ic_x_new),
-            title = "X (Twitter)",
-            subtitle = "@mrvoidxin",
-            onClick = { uriHandler.openUri("https://x.com/mrvoidxin") }
-          )
-          WelcomeDivider()
-          WelcomeActionRow(
             icon = painterResource(R.drawable.github),
             title = "GitHub",
-            subtitle = "mrvoidxin",
-            onClick = { uriHandler.openUri("https://github.com/mrvoidxin") }
+            subtitle = "NETO-DEV66",
+            onClick = { uriHandler.openUri("https://github.com/NETO-DEV66") }
           )
         }
 
         WelcomeSectionCard(title = "Support Flow") {
           WelcomeActionRow(
-            icon = painterResource(R.drawable.coffee),
-            title = "Buy Me a Coffee",
-            subtitle = "buymeacoffee.com/mrvoidxin",
-            onClick = { uriHandler.openUri("https://buymeacoffee.com/mrvoidxin") }
-          )
-          WelcomeDivider()
-          WelcomeActionRow(
-            icon = painterResource(R.drawable.ic_patreon_new),
-            title = "Patreon",
-            subtitle = "patreon.com/cw/mrvoidxin",
-            onClick = { uriHandler.openUri("https://www.patreon.com/cw/mrvoidxin") }
-          )
-          WelcomeDivider()
-          WelcomeActionRow(
             icon = painterResource(R.drawable.upi_new),
             title = "UPI",
-            subtitle = "mrvoidxin@upi",
+            subtitle = "mrsameer1906@okhdfcbank",
             onClick = {
               uriHandler.openUri(
-                "https://intradeus.github.io/http-protocol-redirector/?r=upi://pay?pa=mrvoidxin@upi&pn=Flow%20Music&am=&tn=Thank%20You%20so%20much%20for%20this%20support"
+                "https://intradeus.github.io/http-protocol-redirector/?r=upi://pay?pa=mrsameer1906@okhdfcbank&pn=Flow%20Music&am=&tn=Thank%20You%20so%20much%20for%20this%20support"
               )
             }
           )
@@ -110,7 +82,7 @@ fun WelcomeDialog(onDismissRequest: () -> Unit) {
         Spacer(modifier = Modifier.height(4.dp))
 
         Button(
-          onClick = { uriHandler.openUri("https://github.com/mrvoidxin/Flow-music-") },
+          onClick = { uriHandler.openUri("https://github.com/NETO-DEV66/Flow-music-") },
           modifier = Modifier.fillMaxWidth().height(50.dp),
           shape = RoundedCornerShape(16.dp),
           colors =

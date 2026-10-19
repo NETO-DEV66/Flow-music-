@@ -11,7 +11,7 @@
 Flow Music delivers a seamless, premium listening experience by leveraging YouTube Music's vast library — without the ads. It adds powerful extras including offline downloads, real-time synchronized lyrics, and environment-aware music recognition.
 
 > [!IMPORTANT]
-> **In-app OTA updates have been permanently removed.** Please update manually via the website. Flow Music is completely free and ad-free; the few ads shown during a manual download help support the ongoing development of this project. Please do not open issues requesting to bring this back. Thank you for your support!
+> **Flow Music is completely free and ad-free.** You can install the APK from the [website](https://neto-dev66.github.io/Flow-music-/) or from the [Releases page](https://github.com/NETO-DEV66/Flow-music-/releases), and the app can check for and install new versions from inside the app (Settings → About → Updates).
 
 ---
 
@@ -19,11 +19,7 @@ Flow Music delivers a seamless, premium listening experience by leveraging YouTu
 
 ---
 
-- **GitHub**: [Flow Music repository](https://github.com/mrvoidxin/Flow-music-)
-
----
-
-[![Sponsor](https://readme.cash/i/qx6lmx2nwz.svg)](https://readme.cash/c/qx6lmx2nwz)
+- **GitHub**: [Flow Music repository](https://github.com/NETO-DEV66/Flow-music-)
 
 ---
 
@@ -160,7 +156,7 @@ Flow Music delivers a seamless, premium listening experience by leveraging YouTu
 
 ### Android Installation
 
-Download the latest pre-compiled APK from the [Releases Page](https://github.com/mrvoidxin/Flow-music-/releases/latest).
+Download the latest pre-compiled APK from the [Releases Page](https://github.com/NETO-DEV66/Flow-music-/releases/latest).
 
 <details>
 <summary><b>Building from Source</b></summary>
@@ -169,7 +165,7 @@ Download the latest pre-compiled APK from the [Releases Page](https://github.com
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/mrvoidxin/Flow-music-.git
+   git clone https://github.com/NETO-DEV66/Flow-music-.git
    cd Flow-Music
    ```
 
@@ -211,13 +207,7 @@ If Flow Music has been useful to you, consider supporting its development.
   <table style="margin: 0 auto; border-collapse: collapse; border: none;">
     <tr>
       <td align="center" style="padding: 15px; border: none;">
-        <a href="https://buymeacoffee.com/mrvoidxin" style="text-decoration:none;"><img src="assets/bmac.png" alt="Buy Me A Coffee Logo" width="140" style="border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.2);"/></a>
-      </td>
-      <td align="center" style="padding: 15px; border: none;">
-        <a href="https://intradeus.github.io/http-protocol-redirector/?r=upi://pay?pa=mrvoidxin@upi&pn=Flow%20Music&am=&tn=Thank%20You" style="text-decoration:none;"><img src="assets/UPI.png" alt="UPI Logo" width="140" style="border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.2);"/></a>
-      </td>
-      <td align="center" style="padding: 15px; border: none;">
-        <a href="https://www.patreon.com/cw/mrvoidxin" style="text-decoration:none;"><img src="assets/patreon3.webp" alt="Patreon Logo" width="140" style="border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.2);"/></a>
+        <a href="https://intradeus.github.io/http-protocol-redirector/?r=upi://pay?pa=mrsameer1906@okhdfcbank&pn=Flow%20Music&am=&tn=Thank%20You" style="text-decoration:none;"><img src="assets/UPI.png" alt="UPI Logo" width="140" style="border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.2);"/></a>
       </td>
     </tr>
   </table>
@@ -225,17 +215,7 @@ If Flow Music has been useful to you, consider supporting its development.
 
 <br>
 
-<details>
-<summary><b>Cryptocurrency Options</b></summary>
-<br>
-
-| Network      | Address                                        |
-| :----------- | :--------------------------------------------- |
-| **Bitcoin**  | `bc1qcvyr7eekha8uytmffcvgzf4h7xy7shqzke35fy`   |
-| **Ethereum** | `0x51bc91022E2dCef9974D5db2A0e22d57B360e700`   |
-| **Solana**   | `9wjca3EQnEiqzqgy7N5iqS1JGXJiknMQv6zHgL96t94S` |
-
-</details>
+**UPI ID:** `mrsameer1906@okhdfcbank`
 
 ---
 
@@ -289,7 +269,7 @@ We do not host, upload, distribute, or store any audio, video, or copyrighted me
 
 The software is provided "AS IS", without warranty of any kind. The developers of Flow Music do not encourage or condone piracy. Users are solely responsible for ensuring their usage of this app complies with their local copyright laws and the Terms of Service of the platforms they access.
 
-Because we do not host any media files, we cannot process DMCA takedown requests for audio or video content. However, if you represent a copyright holder or have legal concerns regarding the open-source code itself, please contact us via email at: [mrvoidxin@users.noreply.github.com](mailto:mrvoidxin@users.noreply.github.com)
+Because we do not host any media files, we cannot process DMCA takedown requests for audio or video content. However, if you represent a copyright holder or have legal concerns regarding the open-source code itself, please contact us via email at: [NETO-DEV66@users.noreply.github.com](mailto:NETO-DEV66@users.noreply.github.com)
 
 ---
 

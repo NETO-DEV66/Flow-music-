@@ -2233,11 +2233,7 @@ fun getAllSearchableSettings(): List<SearchableSetting> {
     ),
 
     // About Screen - Social & Support Links
-    SearchableSetting("Website", "Visit the Flow Music website", "About", "settings/about"),
-    SearchableSetting("Instagram", "Follow Flow Music on Instagram", "About", "settings/about"),
-    SearchableSetting("X (Twitter)", "Follow Flow Music on X", "About", "settings/about"),
-    SearchableSetting("Buy Me a Coffee", "Support the developer", "About", "settings/about"),
-    SearchableSetting("Patreon", "Support the developer on Patreon", "About", "settings/about"),
+    SearchableSetting("GitHub", "Follow Flow Music on GitHub", "About", "settings/about"),
     SearchableSetting("UPI", "Support the developer via UPI", "About", "settings/about"),
   ) + listOf(
     SearchableSetting(

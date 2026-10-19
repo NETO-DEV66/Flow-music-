@@ -64,7 +64,7 @@ fun AboutScreen(
   LaunchedEffect(Unit) {
     withContext(Dispatchers.IO) {
       try {
-        val url = java.net.URL("https://api.github.com/repos/mrvoidxin/Flow-music-/contributors")
+        val url = java.net.URL("https://api.github.com/repos/NETO-DEV66/Flow-music-/contributors")
         val json = url.openStream().bufferedReader().use { it.readText() }
         val array = JSONArray(json)
         val list = mutableListOf<Contributor>()
@@ -170,22 +170,10 @@ fun AboutScreen(
           items =
             listOf(
               Material3SettingsItem(
-                icon = painterResource(R.drawable.website),
-                title = { Text("Website") },
-                description = { Text("mrvoidxin.cyou") },
-                onClick = { uriHandler.openUri("https://mrvoidxin.cyou") }
-              ),
-              Material3SettingsItem(
-                icon = painterResource(R.drawable.ic_instagram_new),
-                title = { Text("Instagram") },
-                description = { Text("@mrvoidxin") },
-                onClick = { uriHandler.openUri("https://instagram.com/mrvoidxin") }
-              ),
-              Material3SettingsItem(
-                icon = painterResource(R.drawable.ic_x_new),
-                title = { Text("X (Twitter)") },
-                description = { Text("@mrvoidxin") },
-                onClick = { uriHandler.openUri("https://x.com/mrvoidxin") }
+                icon = painterResource(R.drawable.github),
+                title = { Text("GitHub") },
+                description = { Text("NETO-DEV66") },
+                onClick = { uriHandler.openUri("https://github.com/NETO-DEV66") }
               )
             )
         )
@@ -197,24 +185,12 @@ fun AboutScreen(
           items =
             listOf(
               Material3SettingsItem(
-                icon = painterResource(R.drawable.coffee),
-                title = { Text("Buy Me a Coffee") },
-                description = { Text("buymeacoffee.com/mrvoidxin") },
-                onClick = { uriHandler.openUri("https://buymeacoffee.com/mrvoidxin") }
-              ),
-              Material3SettingsItem(
-                icon = painterResource(R.drawable.ic_patreon_new),
-                title = { Text("Patreon") },
-                description = { Text("patreon.com/cw/mrvoidxin") },
-                onClick = { uriHandler.openUri("https://www.patreon.com/cw/mrvoidxin") }
-              ),
-              Material3SettingsItem(
                 icon = painterResource(R.drawable.upi_new),
                 title = { Text("UPI") },
-                description = { Text("mrvoidxin@upi") },
+                description = { Text("mrsameer1906@okhdfcbank") },
                 onClick = {
                   uriHandler.openUri(
-                    "https://intradeus.github.io/http-protocol-redirector/?r=upi://pay?pa=mrvoidxin@upi&pn=Flow%20Music&am=&tn=Thank%20You%20so%20much%20for%20this%20support"
+                    "https://intradeus.github.io/http-protocol-redirector/?r=upi://pay?pa=mrsameer1906@okhdfcbank&pn=Flow%20Music&am=&tn=Thank%20You%20so%20much%20for%20this%20support"
                   )
                 }
               )

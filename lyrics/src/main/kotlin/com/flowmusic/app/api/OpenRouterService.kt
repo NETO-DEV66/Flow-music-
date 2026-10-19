@@ -167,7 +167,7 @@ Output MUST be a JSON array with EXACTLY $lineCount strings."""
                 }
               }
               .addHeader("Content-Type", "application/json")
-              .addHeader("HTTP-Referer", "https://github.com/mrvoidxin/Flow-music-")
+              .addHeader("HTTP-Referer", "https://github.com/NETO-DEV66/Flow-music-")
               .addHeader("X-Title", "flowmusic")
               .post(jsonBody.toString().toRequestBody(JSON))
               .build()
@@ -304,7 +304,7 @@ Output MUST be a JSON array with EXACTLY $lineCount strings."""
               }
             }
             .addHeader("Content-Type", "application/json")
-            .addHeader("HTTP-Referer", "https://github.com/mrvoidxin/Flow-music-")
+            .addHeader("HTTP-Referer", "https://github.com/NETO-DEV66/Flow-music-")
             .addHeader("X-Title", "flowmusic")
             .post(jsonBody.toString().toRequestBody(JSON))
             .build()

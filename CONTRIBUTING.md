@@ -65,12 +65,12 @@ We are committed to providing a welcoming and inspiring community for all. We pl
 1. Fork the repository on GitHub
 2. Clone your fork locally:
    ```bash
-   git clone https://github.com/mrvoidxin/Flow-music-.git
+   git clone https://github.com/NETO-DEV66/Flow-music-.git
    cd Flow-Music
    ```
 3. Add the upstream repository:
    ```bash
-   git remote add upstream https://github.com/mrvoidxin/Flow-music-.git
+   git remote add upstream https://github.com/NETO-DEV66/Flow-music-.git
    ```
 
 ## Development Setup
@@ -95,8 +95,8 @@ If you want to test Firebase features:
 
 1. Create a Firebase project
 2. Add Android apps with package names:
-   - `mrvoidxin.com.flowmusic` (release)
-   - `mrvoidxin.com.flowmusic.debug` (debug)
+   - `com.flowmusic.app` (release)
+   - `com.flowmusic.app.debug` (debug)
 3. Copy the template and configure it with your Firebase credentials:
    ```bash
    cp app/google-services.json.template app/google-services.json
@@ -427,7 +427,7 @@ We follow [Semantic Versioning](https://semver.org/):
 
 If you have questions about contributing:
 
-1. Check the [GitHub Discussions](https://github.com/mrvoidxin/Flow-music-/discussions)
+1. Check the [GitHub Discussions](https://github.com/NETO-DEV66/Flow-music-/discussions)
 2. Create a new discussion
 3. Contact maintainers directly through GitHub
 
@@ -443,7 +443,7 @@ Contributors will be recognized in:
 
 If you have questions about contributing:
 
-1. Check the [GitHub Discussions](https://github.com/mrvoidxin/Flow-music-/discussions)
+1. Check the [GitHub Discussions](https://github.com/NETO-DEV66/Flow-music-/discussions)
 2. Create a new discussion
 3. Contact maintainers directly
 

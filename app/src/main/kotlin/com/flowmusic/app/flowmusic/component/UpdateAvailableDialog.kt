@@ -197,7 +197,7 @@ fun UpdateAvailableDialog(
             onClick = {
               onDismiss()
               val intent =
-                Intent(Intent.ACTION_VIEW, android.net.Uri.parse("https://github.com/mrvoidxin/Flow-music-"))
+                Intent(Intent.ACTION_VIEW, android.net.Uri.parse("https://github.com/NETO-DEV66/Flow-music-"))
               context.startActivity(intent)
             },
             shape = actionShape,

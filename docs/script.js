@@ -101,6 +101,19 @@ copyBtn?.addEventListener("click", async () => {
   setTimeout(() => (copyBtn.textContent = "copy"), 1600);
 });
 
+/* ---------- copy UPI id ---------- */
+const copyUpi = $("#copyUpi");
+copyUpi?.addEventListener("click", async () => {
+  const value = $("#upiId").textContent.trim();
+  try {
+    await navigator.clipboard.writeText(value);
+    copyUpi.textContent = "Copied!";
+  } catch {
+    copyUpi.textContent = "Select & copy";
+  }
+  setTimeout(() => (copyUpi.textContent = "Copy UPI ID"), 1600);
+});
+
 /* ---------- live release data ---------- */
 const human = (bytes) => {
   if (!bytes) return "—";
