@@ -6,8 +6,12 @@ on:
     paths:
       - "docs/**"
       - ".github/workflows/pages.yml"
-  release:
-    types: [published]
+  # A `release: published` trigger cannot be used here: the release is created
+  # with GITHUB_TOKEN, and events raised by GITHUB_TOKEN never start new
+  # workflow runs. Chaining off the Release workflow instead.
+  workflow_run:
+    workflows: ["Release"]
+    types: [completed]
   workflow_dispatch:
 
 permissions:
@@ -23,6 +27,7 @@ jobs:
   deploy:
     name: Build and deploy to GitHub Pages
     runs-on: ubuntu-latest
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
