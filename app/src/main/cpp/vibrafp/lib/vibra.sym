@@ -1,0 +1,6 @@
+{
+  global:
+    Java_com_flowmusic_app_recognition_VibraSignature_*;
+  local:
+    *;
+};
