@@ -120,7 +120,7 @@ async function loadRelease() {
   let release = null;
 
   try {
-    const snap = await fetch(SNAPSHOT, { cache: "no-cache" });
+    const snap = await fetch(SNAPSHOT, { cache: "no-store" });
     if (snap.ok) {
       const data = await snap.json();
       if (data && (data.tag_name || (data.assets || []).length)) release = data;
