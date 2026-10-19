@@ -6,20 +6,20 @@
 #   http://developer.android.com/guide/developing/tools/proguard.html
 
 # WEB_REMIX Streaming - WebView JavaScript interfaces
--keepclassmembers class com.flowtune.app.utils.sabr.EjsNTransformSolver$SolverWebView {
+-keepclassmembers class com.tunevol.app.utils.sabr.EjsNTransformSolver$SolverWebView {
     @android.webkit.JavascriptInterface public *;
 }
--keepclassmembers class com.flowtune.app.utils.cipher.CipherWebView {
+-keepclassmembers class com.tunevol.app.utils.cipher.CipherWebView {
     @android.webkit.JavascriptInterface public *;
 }
--keepclassmembers class com.flowtune.app.utils.potoken.PoTokenWebView {
+-keepclassmembers class com.tunevol.app.utils.potoken.PoTokenWebView {
     @android.webkit.JavascriptInterface public *;
 }
 
 # Keep streaming utility classes
--keep class com.flowtune.app.utils.cipher.** { *; }
--keep class com.flowtune.app.utils.sabr.** { *; }
--keep class com.flowtune.app.utils.potoken.** { *; }
+-keep class com.tunevol.app.utils.cipher.** { *; }
+-keep class com.tunevol.app.utils.sabr.** { *; }
+-keep class com.tunevol.app.utils.potoken.** { *; }
 
 # Keep coroutine continuation for WebView callbacks
 -keepclassmembers class * {
@@ -117,11 +117,11 @@
 
 ## Queue Persistence Rules
 # Keep queue-related classes to prevent serialization issues in release builds
--keep class com.flowtune.app.models.PersistQueue { *; }
--keep class com.flowtune.app.models.PersistPlayerState { *; }
--keep class com.flowtune.app.models.QueueData { *; }
--keep class com.flowtune.app.models.QueueType { *; }
--keep class com.flowtune.app.playback.queues.** { *; }
+-keep class com.tunevol.app.models.PersistQueue { *; }
+-keep class com.tunevol.app.models.PersistPlayerState { *; }
+-keep class com.tunevol.app.models.QueueData { *; }
+-keep class com.tunevol.app.models.QueueType { *; }
+-keep class com.tunevol.app.playback.queues.** { *; }
 
 # Keep serialization methods for queue persistence
 -keepclassmembers class * implements java.io.Serializable {
@@ -135,7 +135,7 @@
 -keep interface com.yalantis.ucrop** { *; }
 
 ## Google Cast Rules
--keep class com.flowtune.app.cast.** { *; }
+-keep class com.tunevol.app.cast.** { *; }
 -keep class com.google.android.gms.cast.** { *; }
 -keep class androidx.mediarouter.** { *; }
 
@@ -143,8 +143,8 @@
 -dontwarn com.google.re2j.**
 
 # Vibra fingerprint library
--keep class com.flowtune.app.recognition.VibraSignature { *; }
--keepclassmembers class com.flowtune.app.recognition.VibraSignature {
+-keep class com.tunevol.app.recognition.VibraSignature { *; }
+-keepclassmembers class com.tunevol.app.recognition.VibraSignature {
     native <methods>;
 }
 
@@ -174,13 +174,13 @@
 }
 
 ## Listen Together Serialization
--keep class com.flowtune.app.listentogether.** { *; }
--keepclassmembers class com.flowtune.app.listentogether.** {
+-keep class com.tunevol.app.listentogether.** { *; }
+-keepclassmembers class com.tunevol.app.listentogether.** {
     *;
 }
--keepclassmembers class com.flowtune.app.listentogether.** {
+-keepclassmembers class com.tunevol.app.listentogether.** {
     *** Companion;
 }
--keepclasseswithmembers class com.flowtune.app.listentogether.** {
+-keepclasseswithmembers class com.tunevol.app.listentogether.** {
     kotlinx.serialization.KSerializer serializer(...);
 }

@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-  namespace = "com.flowtune.playback"
+  namespace = "com.tunevol.playback"
   compileSdk = 37
   defaultConfig { minSdk = 26 }
   compileOptions {

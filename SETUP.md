@@ -1,6 +1,6 @@
 # Setup Instructions
 
-This document provides instructions for setting up the Flow Tune project for development.
+This document provides instructions for setting up the Tunevol project for development.
 
 ## Prerequisites
 
@@ -14,8 +14,8 @@ This document provides instructions for setting up the Flow Tune project for dev
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/NETO-DEV66/Flow-tune-.git
-cd Flow-Tune
+git clone https://github.com/NETO-DEV66/Tunevol.git
+cd Tunevol
 ```
 
 ### 2. Configure Local Properties
@@ -74,7 +74,7 @@ KEY_PASSWORD=your_key_password
 
 Open the project in Android Studio or build from the command line.
 
-Flow Tune has two build variants: **FOSS** (without Google Play Services / Cast) and **GMS** (with Cast support).
+Tunevol has two build variants: **FOSS** (without Google Play Services / Cast) and **GMS** (with Cast support).
 
 ```bash
 # FOSS Debug build
@@ -92,7 +92,7 @@ Flow Tune has two build variants: **FOSS** (without Google Play Services / Cast)
 
 ### 6. Configure AI Translation (Optional)
 
-Flow Tune supports AI-powered lyrics translation. You can configure this in **Settings -> AI Settings**.
+Tunevol supports AI-powered lyrics translation. You can configure this in **Settings -> AI Settings**.
 
 #### Option A: Using OpenRouter (Default)
 

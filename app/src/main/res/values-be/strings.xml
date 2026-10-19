@@ -360,7 +360,7 @@
     <string name="listen_together_smart_resync">Разумная сеткавая перасінхранізацыя</string>
     <string name="listen_together_smart_resync_desc">Аўтаматычна сінхранізавацца з вядучым пасля разрыву злучэння</string>
     <string name="spotify_import_title">Імпарт са Spotify</string>
-    <string name="spotify_import_desc">Падлучыце Spotify, выберыце плэй-лісты і скапіруйце іх у лакальныя плэй-лісты Flow Tune.</string>
+    <string name="spotify_import_desc">Падлучыце Spotify, выберыце плэй-лісты і скапіруйце іх у лакальныя плэй-лісты Tunevol.</string>
     <string name="spotify_connect">Падлучыць Spotify</string>
     <string name="spotify_refresh">Абнавіць бібліятэку Spotify</string>
     <string name="spotify_select_sources">Выбраць плэй-лісты Spotify</string>
@@ -424,10 +424,10 @@
     <string name="recognition_notification_processing">Распазнаванне…</string>
     <string name="recognition_notification_no_match">Супадзенняў не знойдзена</string>
     <string name="recognition_notification_failed">Не ўдалося распазнаць</string>
-    <string name="listen_on_flow_tune">Слухаць у Flow Tune</string>
+    <string name="listen_on_tunevol">Слухаць у Tunevol</string>
     <string name="qs_tile_music_recognizer">Распазнаць музыку</string>
-    <string name="flow_brain_beta">Flow Brain (бэта-версія)</string>
-    <string name="flow_brain_enable">Уключыць Flow Brain</string>
+    <string name="flow_brain_beta">Tunevol Brain (бэта-версія)</string>
+    <string name="flow_brain_enable">Уключыць Tunevol Brain</string>
     <string name="flow_brain_enable_desc">Аўтаматычна дадаваць рэкамендацыі ШІ на аснове вашых звычак праслухоўвання</string>
     <string name="flow_brain_profile_statistics">Статыстыка профілю</string>
     <string name="flow_brain_learning_level">Узровень навучання</string>
@@ -454,9 +454,9 @@
     <string name="listenbrainz_scrobbling">Скроблінг ListenBrainz</string>
     <string name="listenbrainz_scrobbling_description">Аўтаматычна адпраўляць праслуханыя кампазіцыі ў ListenBrainz</string>
     <string name="set_listenbrainz_token">Задаць токен ListenBrainz</string>
-    <string name="youtube_decryption_settings">Flow Extractor</string>
+    <string name="youtube_decryption_settings">Tunevol Extractor</string>
     <string name="youtube_decryption_desc">Наладзіць параметры экстрактара</string>
-    <string name="youtube_decryption_support">Flow Extractor</string>
+    <string name="youtube_decryption_support">Tunevol Extractor</string>
     <string name="youtube_decryption_support_desc">Аўтаматычна здабывае канфігурацыі прайгравання YouTube. Заўсёды ўключана.</string>
     <string name="force_update_cipher">Прымусова абнавіць канфігурацыі</string>
     <string name="force_update_cipher_desc">Спампаваць найноўшыя перавызначэнні адпаведнасцей экстрактара. Не больш за 3 абнаўленні на дзень.</string>

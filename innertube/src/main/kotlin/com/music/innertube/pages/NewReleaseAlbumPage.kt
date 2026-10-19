@@ -1,6 +1,6 @@
 package com.music.innertube.pages
 
-import com.flowtune.metadata.cleaner.ApiText
+import com.tunevol.metadata.cleaner.ApiText
 import com.music.innertube.models.AlbumItem
 import com.music.innertube.models.Artist
 import com.music.innertube.models.MusicTwoRowItemRenderer

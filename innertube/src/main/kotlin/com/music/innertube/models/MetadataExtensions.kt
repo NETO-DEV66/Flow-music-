@@ -1,7 +1,7 @@
 package com.music.innertube.models
 
-import com.flowtune.metadata.cleaner.MetadataCleaner
-import com.flowtune.metadata.models.CleanedMetadata
+import com.tunevol.metadata.cleaner.MetadataCleaner
+import com.tunevol.metadata.models.CleanedMetadata
 
 val SongItem.cleanedMetadata: CleanedMetadata
   get() = MetadataCleaner.clean(title, artists.firstOrNull()?.name.orEmpty())

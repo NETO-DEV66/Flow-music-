@@ -380,10 +380,10 @@
     <string name="recognition_notification_processing">Musiqi emal edilir</string>
     <string name="recognition_notification_no_match">Uyğunluq tapılmadı</string>
     <string name="recognition_notification_failed">Musiqini tanımaq mümkün olmadı</string>
-    <string name="listen_on_flow_tune">Flow Tune-də dinlə</string>
+    <string name="listen_on_tunevol">Tunevol-də dinlə</string>
     <string name="qs_tile_music_recognizer">Musiqi tanıyıcı</string>
-    <string name="flow_brain_beta">Flow Brain Beta</string>
-    <string name="flow_brain_enable">Flow Brain-i aktiv et</string>
+    <string name="flow_brain_beta">Tunevol Brain Beta</string>
+    <string name="flow_brain_enable">Tunevol Brain-i aktiv et</string>
     <string name="flow_brain_enable_desc">Fərdiləşdirilmiş musiqi profilinizi yaratmaq üçün dinləmə vərdişlərinizi öyrənir</string>
     <string name="flow_brain_profile_statistics">Profil statistikası</string>
     <string name="flow_brain_learning_level">Öyrənmə səviyyəsi</string>
@@ -396,9 +396,9 @@
     <string name="flow_brain_artists_mapped">Xəritələnən ifaçılar</string>
     <string name="flow_brain_data_management">Məlumatların idarə edilməsi</string>
     <string name="flow_brain_export_profile">Profili ixrac et</string>
-    <string name="flow_brain_export_profile_desc">Flow Brain profilinizi fayl kimi ixrac edin</string>
+    <string name="flow_brain_export_profile_desc">Tunevol Brain profilinizi fayl kimi ixrac edin</string>
     <string name="flow_brain_import_profile">Profili idxal et</string>
-    <string name="flow_brain_import_profile_desc">Flow Brain profilini fayldan idxal edin</string>
+    <string name="flow_brain_import_profile_desc">Tunevol Brain profilini fayldan idxal edin</string>
     <string name="flow_brain_reset_profile">Profili sıfırla</string>
     <string name="flow_brain_reset_profile_desc">Öyrənilmiş profil məlumatlarını sıfırlayın</string>
     <string name="flow_brain_reset_neural_profile">Neyron profili sıfırla</string>

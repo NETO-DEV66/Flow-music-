@@ -1,4 +1,4 @@
-"""Generate the Flow Tune launcher/app icon set.
+"""Generate the Tunevol launcher/app icon set.
 
 Design: a bold five-bar soundwave ("flow") with rounded caps, filled by the app's
 violet -> cyan gradient, on a deep near-black tile with a soft violet glow. Bar
@@ -136,11 +136,11 @@ def banner_at(s):
     font = ImageFont.truetype("app/src/main/res/font/plus_jakarta_sans.ttf", int(h * 0.235))
     d = ImageDraw.Draw(out)
     tx = int(h * 0.20) + m + int(h * 0.13)
-    box = d.textbbox((tx, 0), "Flow Tune", font=font)
+    box = d.textbbox((tx, 0), "Tunevol", font=font)
     ty = (h - (box[3] - box[1])) // 2 - box[1]
 
     text_mask = Image.new("L", (w, h), 0)
-    ImageDraw.Draw(text_mask).text((tx, ty), "Flow Tune", font=font, fill=255)
+    ImageDraw.Draw(text_mask).text((tx, ty), "Tunevol", font=font, fill=255)
     out.paste(gradient(w, h, VIOLET, CYAN), (0, 0), text_mask)
     return out
 
@@ -177,8 +177,8 @@ def main():
     # Android TV banner (@mipmap/tv_banner, referenced from the manifest)
     write(banner_at(180), f"{root}/mipmap-xhdpi/tv_banner.png")
 
-    # Landing page favicon / header logo (docs/assets/Flow-new.png)
-    write(tile(512, radius_ratio=0.22), "docs/assets/Flow-new.png")
+    # Landing page favicon / header logo (docs/assets/tunevol.png)
+    write(tile(512, radius_ratio=0.22), "docs/assets/tunevol.png")
 
     print("icons generated")
 

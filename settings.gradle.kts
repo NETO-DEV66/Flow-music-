@@ -16,7 +16,7 @@ dependencyResolutionManagement {
 //     id("org.gradle.toolchains.foojay-resolver-convention") version("1.0.0")
 // }
 
-rootProject.name = "flowtune"
+rootProject.name = "tunevol"
 include(
     ":app",
     ":innertube",
@@ -29,7 +29,7 @@ include(
     ":shazamkit",
     ":artistvideo",
     ":canvas",
-    ":flowtunecanvas",
+    ":tunevolcanvas",
     ":applecanvas",
     ":unison",
     ":core",
@@ -44,7 +44,7 @@ include(
 
 
 // Use a local copy of BravePipe Extractor.
-// We assume, that flowtune and BravePipe Extractor have the same parent directory.
+// We assume, that tunevol and BravePipe Extractor have the same parent directory.
 // If this is not the case, please change the path in includeBuild().
 //
 // For this to work you also need to change the implementation in innertube/build.gradle.kts

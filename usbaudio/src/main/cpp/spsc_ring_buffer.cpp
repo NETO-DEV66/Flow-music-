@@ -2,7 +2,7 @@
 #include <algorithm>
 #include <cstring>
 
-namespace com::flowtune::usbaudio {
+namespace com::tunevol::usbaudio {
 
 static size_t nextPowerOfTwo(size_t val) {
     if (val <= 1) return 1;
@@ -85,4 +85,4 @@ void SpscRingBuffer::flush() {
     read_index_.store(current_write, std::memory_order_release);
 }
 
-} // namespace com::flowtune::usbaudio
+} // namespace com::tunevol::usbaudio

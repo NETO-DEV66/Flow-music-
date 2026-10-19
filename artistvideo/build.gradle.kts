@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-  namespace = "com.flowtune.app.artistvideo"
+  namespace = "com.tunevol.app.artistvideo"
   compileSdk = 37
 
   defaultConfig { minSdk = 26 }

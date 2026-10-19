@@ -25,12 +25,12 @@ if (hasGoogleServicesConfig) {
 }
 
 android {
-  namespace = "com.flowtune.app"
+  namespace = "com.tunevol.app"
   compileSdk = 37
   ndkVersion = "28.2.13676358"
 
   defaultConfig {
-    applicationId = "com.flowtune.app"
+    applicationId = "com.tunevol.app"
     minSdk = 26
     targetSdk = 36
     versionCode = 167
@@ -311,7 +311,7 @@ dependencies {
   implementation(project(":shazamkit"))
   implementation(project(":artistvideo"))
   implementation(project(":applecanvas"))
-  implementation(project(":flowtunecanvas"))
+  implementation(project(":tunevolcanvas"))
   implementation(project(":paxsenixlyrics"))
   implementation(project(":unison"))
 

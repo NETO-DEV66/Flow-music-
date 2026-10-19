@@ -1,6 +1,6 @@
 {
   global:
-    Java_com_flowtune_app_recognition_VibraSignature_*;
+    Java_com_tunevol_app_recognition_VibraSignature_*;
   local:
     *;
 };

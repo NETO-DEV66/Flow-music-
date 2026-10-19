@@ -1,6 +1,6 @@
-# Contributing to Flow Tune
+# Contributing to Tunevol
 
-Thank you for your interest in contributing to Flow Tune! This document provides comprehensive guidelines and information for contributors.
+Thank you for your interest in contributing to Tunevol! This document provides comprehensive guidelines and information for contributors.
 
 ## Table of Contents
 
@@ -65,12 +65,12 @@ We are committed to providing a welcoming and inspiring community for all. We pl
 1. Fork the repository on GitHub
 2. Clone your fork locally:
    ```bash
-   git clone https://github.com/NETO-DEV66/Flow-tune-.git
-   cd Flow-Tune
+   git clone https://github.com/NETO-DEV66/Tunevol.git
+   cd Tunevol
    ```
 3. Add the upstream repository:
    ```bash
-   git remote add upstream https://github.com/NETO-DEV66/Flow-tune-.git
+   git remote add upstream https://github.com/NETO-DEV66/Tunevol.git
    ```
 
 ## Development Setup
@@ -95,8 +95,8 @@ If you want to test Firebase features:
 
 1. Create a Firebase project
 2. Add Android apps with package names:
-   - `com.flowtune.app` (release)
-   - `com.flowtune.app.debug` (debug)
+   - `com.tunevol.app` (release)
+   - `com.tunevol.app.debug` (debug)
 3. Copy the template and configure it with your Firebase credentials:
    ```bash
    cp app/google-services.json.template app/google-services.json
@@ -107,7 +107,7 @@ If you want to test Firebase features:
 
 ## Handling Sensitive Information
 
-When contributing to Flow Tune, it's crucial to handle sensitive information properly:
+When contributing to Tunevol, it's crucial to handle sensitive information properly:
 
 ### Files That Should Never Be Committed
 
@@ -296,7 +296,7 @@ We provide issue templates for:
 
 ### Code Organization
 
-Path: `app/src/main/kotlin/com/flowtune/`
+Path: `app/src/main/kotlin/com/tunevol/`
 
 > **Note:** We are currently in Phase 1 of modularizing the application. The `lyrics` and `playback` code, along with shared `constants` and `models`, are actively being migrated out of `:app` into dedicated `:lyrics`, `:playback`, and `:core` Gradle modules. The structure below represents the legacy monolithic structure until migration is complete.
 
@@ -309,7 +309,7 @@ db/
   entities/     Room entities (Song, Album, Artist, Playlist, Lyrics, etc.)
   daos/         Room DAOs
 di/             Hilt modules (AppModule, NetworkModule, Qualifiers, entry points)
-flowtune/      Core app-level classes
+tunevol/      Core app-level classes
 eq/             Equalizer
 extensions/     Kotlin extension functions
 listentogether/ "Listen Together" synced group listening feature
@@ -318,7 +318,7 @@ lyrics/         Lyrics orchestration
 models/         Shared data models
 playback/       Media3/ExoPlayer service, download manager, queueing, audio
 quicksettings/  Android quick settings tile
-recognition/    Music recognition (Flow Find) app-side logic
+recognition/    Music recognition (Tunevol Find) app-side logic
 spotify/        Spotify API integration
 spotifyimport/  Import playlists/tracks from Spotify
 ui/
@@ -339,7 +339,7 @@ widget/         Home-screen widget
 - **Functions**: camelCase (`playMusic()`)
 - **Variables**: camelCase (`currentSong`)
 - **Constants**: UPPER_SNAKE_CASE (`MAX_VOLUME`)
-- **Packages**: lowercase (`com.flowtune.app.ui`)
+- **Packages**: lowercase (`com.tunevol.app.ui`)
 
 ## Testing
 
@@ -363,7 +363,7 @@ widget/         Home-screen widget
 ./gradlew test
 
 # Run specific test class
-./gradlew test --tests "com.flowtune.app.MusicPlayerTest"
+./gradlew test --tests "com.tunevol.app.MusicPlayerTest"
 
 # Run tests with coverage
 ./gradlew testDebugUnitTestCoverage
@@ -427,7 +427,7 @@ We follow [Semantic Versioning](https://semver.org/):
 
 If you have questions about contributing:
 
-1. Check the [GitHub Discussions](https://github.com/NETO-DEV66/Flow-tune-/discussions)
+1. Check the [GitHub Discussions](https://github.com/NETO-DEV66/Tunevol/discussions)
 2. Create a new discussion
 3. Contact maintainers directly through GitHub
 
@@ -443,11 +443,11 @@ Contributors will be recognized in:
 
 If you have questions about contributing:
 
-1. Check the [GitHub Discussions](https://github.com/NETO-DEV66/Flow-tune-/discussions)
+1. Check the [GitHub Discussions](https://github.com/NETO-DEV66/Tunevol/discussions)
 2. Create a new discussion
 3. Contact maintainers directly
 
-Thank you for contributing to Flow Tune!
+Thank you for contributing to Tunevol!
 
 ---
 <div align="center">

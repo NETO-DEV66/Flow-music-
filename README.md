@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/banner.png" alt="Flow Tune Logo"/>
+  <img src="assets/banner.png" alt="Tunevol Logo"/>
 
   <p><b>A modern Android music app with ad-free streaming, synced lyrics, offline playback, and an intuitive user experience.</b></p>
 </div>
@@ -8,18 +8,18 @@
 
 ## Overview
 
-Flow Tune delivers a seamless, premium listening experience by leveraging YouTube Music's vast library — without the ads. It adds powerful extras including offline downloads, real-time synchronized lyrics, and environment-aware music recognition.
+Tunevol delivers a seamless, premium listening experience by leveraging YouTube Music's vast library — without the ads. It adds powerful extras including offline downloads, real-time synchronized lyrics, and environment-aware music recognition.
 
 > [!IMPORTANT]
-> **Flow Tune is completely free and ad-free.** You can install the APK from the [website](https://neto-dev66.github.io/Flow-tune-/) or from the [Releases page](https://github.com/NETO-DEV66/Flow-tune-/releases), and the app can check for and install new versions from inside the app (Settings → About → Updates).
+> **Tunevol is completely free and ad-free.** You can install the APK from the [website](https://neto-dev66.github.io/Tunevol/) or from the [Releases page](https://github.com/NETO-DEV66/Tunevol/releases), and the app can check for and install new versions from inside the app (Settings → About → Updates).
 
 ---
 
-**[Website](https://neto-dev66.github.io/Flow-tune-/)** · [Releases](https://github.com/NETO-DEV66/Flow-tune-/releases) · [Issues](https://github.com/NETO-DEV66/Flow-tune-/issues)
+**[Website](https://neto-dev66.github.io/Tunevol/)** · [Releases](https://github.com/NETO-DEV66/Tunevol/releases) · [Issues](https://github.com/NETO-DEV66/Tunevol/issues)
 
 ---
 
-- **GitHub**: [Flow Tune repository](https://github.com/NETO-DEV66/Flow-tune-)
+- **GitHub**: [Tunevol repository](https://github.com/NETO-DEV66/Tunevol)
 
 ---
 
@@ -76,7 +76,7 @@ Flow Tune delivers a seamless, premium listening experience by leveraging YouTub
 
 ### What's New
 
-> **Music DNA (New!)** — Instantly uncover the backstory of any track. Flow Tune queries Genius for deep track annotations, and intelligently falls back to Wikipedia API extracts for regional or obscure tracks where crowd-sourced meanings are missing.
+> **Music DNA (New!)** — Instantly uncover the backstory of any track. Tunevol queries Genius for deep track annotations, and intelligently falls back to Wikipedia API extracts for regional or obscure tracks where crowd-sourced meanings are missing.
 
 <br>
 
@@ -95,11 +95,11 @@ Flow Tune delivers a seamless, premium listening experience by leveraging YouTub
 </details>
 
 <details>
-<summary><b>Discovery & Flow Find</b></summary>
+<summary><b>Discovery & Tunevol Find</b></summary>
 <br>
 
-- **Flow Find** — Identify songs playing around you using advanced audio recognition.
-- **Flow Brain** — An intelligent, on-device engine that analyzes your listening momentum and auto-injects perfectly aligned tracks into your queue. Read more in the [Flow Brain Documentation](FLOW_BRAIN_DOCS.md).
+- **Tunevol Find** — Identify songs playing around you using advanced audio recognition.
+- **Tunevol Brain** — An intelligent, on-device engine that analyzes your listening momentum and auto-injects perfectly aligned tracks into your queue. Read more in the [Tunevol Brain Documentation](FLOW_BRAIN_DOCS.md).
 - **Smart Recommendations** — Personalized suggestions based on your listening history.
 - **Comprehensive Browsing** — Explore Charts, Podcasts, Moods, and Genres.
 
@@ -156,7 +156,7 @@ Flow Tune delivers a seamless, premium listening experience by leveraging YouTub
 
 ### Android Installation
 
-Download the latest pre-compiled APK from the [Releases Page](https://github.com/NETO-DEV66/Flow-tune-/releases/latest).
+Download the latest pre-compiled APK from the [Releases Page](https://github.com/NETO-DEV66/Tunevol/releases/latest).
 
 <details>
 <summary><b>Building from Source</b></summary>
@@ -165,8 +165,8 @@ Download the latest pre-compiled APK from the [Releases Page](https://github.com
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/NETO-DEV66/Flow-tune-.git
-   cd Flow-Tune
+   git clone https://github.com/NETO-DEV66/Tunevol.git
+   cd Tunevol
    ```
 
 2. **Configure Android SDK**
@@ -182,7 +182,7 @@ Download the latest pre-compiled APK from the [Releases Page](https://github.com
    Firebase is required for analytics and crash reporting. See the instructions in [SETUP.md](SETUP.md#3-configure-firebase-optional) for adding your `google-services.json`.
 
 4. **Build the Application**
-   Flow Tune has two build variants: **FOSS** (without Google Play Services / Cast) and **GMS** (with Cast support).
+   Tunevol has two build variants: **FOSS** (without Google Play Services / Cast) and **GMS** (with Cast support).
 
    - To build the **FOSS** Universal Debug variant:
      ```bash
@@ -201,13 +201,13 @@ Download the latest pre-compiled APK from the [Releases Page](https://github.com
 
 ## Support the Project
 
-If Flow Tune has been useful to you, consider supporting its development.
+If Tunevol has been useful to you, consider supporting its development.
 
 <div align="left">
   <table style="margin: 0 auto; border-collapse: collapse; border: none;">
     <tr>
       <td align="center" style="padding: 15px; border: none;">
-        <a href="https://intradeus.github.io/http-protocol-redirector/?r=upi://pay?pa=mrsameer1906@okhdfcbank&pn=Flow%20Music&am=&tn=Thank%20You" style="text-decoration:none;"><img src="assets/UPI.png" alt="UPI Logo" width="140" style="border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.2);"/></a>
+        <a href="https://intradeus.github.io/http-protocol-redirector/?r=upi://pay?pa=mrsameer1906@okhdfcbank&pn=Tunevol&am=&tn=Thank%20You" style="text-decoration:none;"><img src="assets/UPI.png" alt="UPI Logo" width="140" style="border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.2);"/></a>
       </td>
     </tr>
   </table>
@@ -221,7 +221,7 @@ If Flow Tune has been useful to you, consider supporting its development.
 
 ## Contributors
 
-Without the support of this incredible open-source community, none of this would be possible. Thank you to everyone who has contributed to Flow Tune!
+Without the support of this incredible open-source community, none of this would be possible. Thank you to everyone who has contributed to Tunevol!
 
 <!-- readme: contributors -start -->
 <table>
@@ -234,7 +234,7 @@ Without the support of this incredible open-source community, none of this would
 
 ## Special Thanks
 
-Flow Tune stands on the shoulders of several excellent open-source projects. Sincere thanks to:
+Tunevol stands on the shoulders of several excellent open-source projects. Sincere thanks to:
 
 | Project                                                                                                                   | Description                                         |
 | :------------------------------------------------------------------------------------------------------------------------ | :-------------------------------------------------- |
@@ -242,7 +242,7 @@ Flow Tune stands on the shoulders of several excellent open-source projects. Sin
 | **[ArchiveTune](https://github.com/koiverse/ArchiveTune)**                                                                | Material You UI inspiration                         |
 | **[Better Lyrics](https://better-lyrics.boidu.dev/)**                                                                     | Lyrics enhancement and synchronization              |
 | **[SimpMusic](https://github.com/maxrave-dev/SimpMusic)**                                                                 | Lyrics implementation reference                     |
-| **[Music Recognizer](https://github.com/aleksey-saenko/MusicRecognizer)**                                                 | Audio recognition (Flow Find)                       |
+| **[Music Recognizer](https://github.com/aleksey-saenko/MusicRecognizer)**                                                 | Audio recognition (Tunevol Find)                       |
 | **[BravePipe](https://github.com/bravepipeproject/BravePipe)**                                                            | Decryption handling and backup playback engine      |
 
 ---
@@ -251,15 +251,15 @@ Flow Tune stands on the shoulders of several excellent open-source projects. Sin
 
 ### 1. 100% Free, Open-Source & Strictly Non-Commercial
 
-Flow Tune is a fully open-source project (FOSS) created purely for educational purposes and personal use. We do not sell this application, nor do we monetize it in any way. There are no advertisements, no premium features, no subscriptions, and no hidden fees within the app. This project has absolutely no commercial value or financial intent.
+Tunevol is a fully open-source project (FOSS) created purely for educational purposes and personal use. We do not sell this application, nor do we monetize it in any way. There are no advertisements, no premium features, no subscriptions, and no hidden fees within the app. This project has absolutely no commercial value or financial intent.
 
 ### 2. A Custom Browser with Content Filtering
 
-Flow Tune acts strictly as a specialized, third-party web browser and client. It simply parses the publicly available website content and APIs of YouTube and YouTube Music, rendering them in a custom user interface. The ad-free experience it provides is fundamentally no different from using a standard web browser (like Chrome, Firefox, or Brave) equipped with a common ad-blocking extension (such as uBlock Origin).
+Tunevol acts strictly as a specialized, third-party web browser and client. It simply parses the publicly available website content and APIs of YouTube and YouTube Music, rendering them in a custom user interface. The ad-free experience it provides is fundamentally no different from using a standard web browser (like Chrome, Firefox, or Brave) equipped with a common ad-blocking extension (such as uBlock Origin).
 
 ### 3. Support Content Creators
 
-We deeply respect the hard work of artists, musicians, and content creators. We strongly encourage all users to subscribe to [YouTube Premium](https://www.youtube.com/premium). Purchasing a Premium subscription is the best way to financially support the creators you listen to and ensure the continued growth of the platform. Flow Tune is built as a proof-of-concept for developers and enthusiasts, not to harm creators' revenues.
+We deeply respect the hard work of artists, musicians, and content creators. We strongly encourage all users to subscribe to [YouTube Premium](https://www.youtube.com/premium). Purchasing a Premium subscription is the best way to financially support the creators you listen to and ensure the continued growth of the platform. Tunevol is built as a proof-of-concept for developers and enthusiasts, not to harm creators' revenues.
 
 ### 4. No Hosting of Copyrighted Material
 
@@ -267,7 +267,7 @@ We do not host, upload, distribute, or store any audio, video, or copyrighted me
 
 ### 5. User Responsibility & Legal Contact
 
-The software is provided "AS IS", without warranty of any kind. The developers of Flow Tune do not encourage or condone piracy. Users are solely responsible for ensuring their usage of this app complies with their local copyright laws and the Terms of Service of the platforms they access.
+The software is provided "AS IS", without warranty of any kind. The developers of Tunevol do not encourage or condone piracy. Users are solely responsible for ensuring their usage of this app complies with their local copyright laws and the Terms of Service of the platforms they access.
 
 Because we do not host any media files, we cannot process DMCA takedown requests for audio or video content. However, if you represent a copyright holder or have legal concerns regarding the open-source code itself, please contact us via email at: [NETO-DEV66@users.noreply.github.com](mailto:NETO-DEV66@users.noreply.github.com)
 

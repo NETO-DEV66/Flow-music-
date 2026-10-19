@@ -1,8 +1,8 @@
-# Privacy Policy for Flow Tune App
+# Privacy Policy for Tunevol App
 
 ## Introduction
 
-Flow Tune ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application (the "App").
+Tunevol ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application (the "App").
 
 ## Information We Collect
 
@@ -119,9 +119,9 @@ We may update this Privacy Policy from time to time. We will notify you of any c
 
 If you have any questions about this Privacy Policy or our data practices, please contact us:
 
-- **GitHub**: [https://github.com/NETO-DEV66/Flow-tune-](https://github.com/NETO-DEV66/Flow-tune-)
-- **Issues**: [https://github.com/NETO-DEV66/Flow-tune-/issues](https://github.com/NETO-DEV66/Flow-tune-/issues)
-- **Discussions**: [https://github.com/NETO-DEV66/Flow-tune-/discussions](https://github.com/NETO-DEV66/Flow-tune-/discussions)
+- **GitHub**: [https://github.com/NETO-DEV66/Tunevol](https://github.com/NETO-DEV66/Tunevol)
+- **Issues**: [https://github.com/NETO-DEV66/Tunevol/issues](https://github.com/NETO-DEV66/Tunevol/issues)
+- **Discussions**: [https://github.com/NETO-DEV66/Tunevol/discussions](https://github.com/NETO-DEV66/Tunevol/discussions)
 
 ## Data Protection Compliance
 
@@ -141,5 +141,5 @@ This Privacy Policy complies with:
 
 ---
 
-**By using Flow Tune, you agree to the collection and use of information in accordance with this Privacy Policy.**
+**By using Tunevol, you agree to the collection and use of information in accordance with this Privacy Policy.**
 

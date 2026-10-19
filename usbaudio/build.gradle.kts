@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-  namespace = "com.flowtune.usbaudio"
+  namespace = "com.tunevol.usbaudio"
   compileSdk = 37
   ndkVersion = "28.2.13676358"
 

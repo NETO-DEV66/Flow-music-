@@ -6,7 +6,7 @@
 #include <vector>
 #include <optional>
 
-namespace com::flowtune::usbaudio {
+namespace com::tunevol::usbaudio {
 
 struct ParsedFormat {
     uint8_t interfaceNumber{0};
@@ -36,4 +36,4 @@ public:
     static ParsedDacCapabilities parse(const uint8_t* data, size_t size);
 };
 
-} // namespace com::flowtune::usbaudio
+} // namespace com::tunevol::usbaudio

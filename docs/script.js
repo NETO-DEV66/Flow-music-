@@ -1,7 +1,7 @@
 /* ============================================================
-   Flow Tune — landing page behaviour
+   Tunevol — landing page behaviour
    ============================================================ */
-const REPO = "NETO-DEV66/Flow-tune-";
+const REPO = "NETO-DEV66/Tunevol";
 const RELEASES = `https://github.com/${REPO}/releases`;
 const SNAPSHOT = "release.json";
 const LATEST_API = `https://api.github.com/repos/${REPO}/releases/latest`;

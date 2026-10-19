@@ -278,7 +278,7 @@
     <string name="preview">Pregled</string>
     <string name="app_version">Verzija aplikacije</string>
     <string name="action_logout">Izpiši se</string>
-    <string name="about">O flowtune-u</string>
+    <string name="about">O tunevol-u</string>
     <string name="clear_translation_models">Rasčisti modele prevođenja</string>
     <string name="new_version_available">Dostupna je nova verzija</string>
     <string name="translation_models">Modeli prevođenja</string>
@@ -349,7 +349,7 @@
     <string name="listen_together_smart_resync">Pametna mrežna ponovna sinhronizacija</string>
     <string name="listen_together_smart_resync_desc">Automatski se uskladite s domaćinom nakon prekida veze</string>
     <string name="spotify_import_title">Uvezi sa Spotifyja</string>
-    <string name="spotify_import_desc">Povežite Spotify, odaberite spiskove i preslikajte ih u lokalne Flow Tune spiskove.</string>
+    <string name="spotify_import_desc">Povežite Spotify, odaberite spiskove i preslikajte ih u lokalne Tunevol spiskove.</string>
     <string name="spotify_connect">Poveži Spotify</string>
     <string name="spotify_refresh">Osvježi Spotify biblioteku</string>
     <string name="spotify_select_sources">Odaberite Spotify spiskove</string>
@@ -410,10 +410,10 @@
     <string name="other_services">Ostale usluge</string>
     <string name="status_online">Na mreži</string>
     <string name="status_offline">Van mreže</string>
-    <string name="listen_on_flow_tune">Slušajte na Flow Tune</string>
+    <string name="listen_on_tunevol">Slušajte na Tunevol</string>
     <string name="qs_tile_music_recognizer">Prepoznaj muziku</string>
-    <string name="flow_brain_beta">Flow Brain (Beta)</string>
-    <string name="flow_brain_enable">Omogući Flow Brain</string>
+    <string name="flow_brain_beta">Tunevol Brain (Beta)</string>
+    <string name="flow_brain_enable">Omogući Tunevol Brain</string>
     <string name="flow_brain_enable_desc">Automatski ubrizgajte preporuke umjetne inteligencije na osnovu vaših navika slušanja</string>
     <string name="flow_brain_profile_statistics">Statistika profila</string>
     <string name="flow_brain_learning_level">Nivo učenja</string>
@@ -440,9 +440,9 @@
     <string name="listenbrainz_scrobbling">ListenBrainz skrobling</string>
     <string name="listenbrainz_scrobbling_description">Automatski pošaljite svoje preslušane pjesme na ListenBrainz</string>
     <string name="set_listenbrainz_token">Postavi ListenBrainz token</string>
-    <string name="youtube_decryption_settings">Flow ekstraktor</string>
+    <string name="youtube_decryption_settings">Tunevol ekstraktor</string>
     <string name="youtube_decryption_desc">Podesite postavke ekstraktora</string>
-    <string name="youtube_decryption_support">Flow ekstraktor</string>
+    <string name="youtube_decryption_support">Tunevol ekstraktor</string>
     <string name="youtube_decryption_support_desc">Automatski izdvaja konfiguracije reprodukcije s YouTubea. Zaključano na aktivno stanje.</string>
     <string name="force_update_cipher">Prisilno ažuriraj konfiguracije</string>
     <string name="force_update_cipher_desc">Preuzmite najnovija zamjenska mapiranja ekstraktora. Ograničeno na 3 ažuriranja dnevno.</string>

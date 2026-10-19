@@ -1,6 +1,6 @@
-# Flow Tune Releases
+# Tunevol Releases
 
-This document tracks all available releases for Flow Tune. 
+This document tracks all available releases for Tunevol. 
 
 ## [v1.5.0] - 2026-10-19 (Latest)
 [Download on GitHub](https://github.com/NETO-DEV66/Flow-tune-/releases/tag/v1.5.0)

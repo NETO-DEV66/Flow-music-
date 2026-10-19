@@ -339,7 +339,7 @@
     <string name="listen_together_smart_resync">Nutikas võrgu uuesti sünkroonimine</string>
     <string name="listen_together_smart_resync_desc">Pärast ühenduse katkemist saavuta automaatselt uuesti hostiga kooskõla</string>
     <string name="spotify_import_title">Impordi Spotify-st</string>
-    <string name="spotify_import_desc">Ühenda Spotify, vali esitusloendid ja peegelda need kohalikesse Flow Tune esitusloenditesse.</string>
+    <string name="spotify_import_desc">Ühenda Spotify, vali esitusloendid ja peegelda need kohalikesse Tunevol esitusloenditesse.</string>
     <string name="spotify_connect">Ühenda Spotify</string>
     <string name="spotify_refresh">Värskenda Spotify muusikakogu</string>
     <string name="spotify_select_sources">Vali Spotify esitusloendid</string>
@@ -399,10 +399,10 @@
     <string name="recognition_notification_processing">Tuvastamine…</string>
     <string name="recognition_notification_no_match">Vastet ei leitud</string>
     <string name="recognition_notification_failed">Tuvastamine ebaõnnestus</string>
-    <string name="listen_on_flow_tune">Kuula Flow Tuneus</string>
+    <string name="listen_on_tunevol">Kuula Tunevolus</string>
     <string name="qs_tile_music_recognizer">Tuvasta muusika</string>
-    <string name="flow_brain_beta">Flow Brain (beeta)</string>
-    <string name="flow_brain_enable">Luba Flow Brain</string>
+    <string name="flow_brain_beta">Tunevol Brain (beeta)</string>
+    <string name="flow_brain_enable">Luba Tunevol Brain</string>
     <string name="flow_brain_enable_desc">Lisa automaatselt tehisintellekti soovitusi, lähtudes sinu kuulamisharjumustest</string>
     <string name="flow_brain_profile_statistics">Profiili statistika</string>
     <string name="flow_brain_learning_level">Õppetase</string>
@@ -429,9 +429,9 @@
     <string name="listenbrainz_scrobbling">ListenBrainz scrobbling</string>
     <string name="listenbrainz_scrobbling_description">Esita automaatselt kuulatud lood ListenBrainzile</string>
     <string name="set_listenbrainz_token">Määra ListenBrainz luba</string>
-    <string name="youtube_decryption_settings">Flow Extractor</string>
+    <string name="youtube_decryption_settings">Tunevol Extractor</string>
     <string name="youtube_decryption_desc">Konfigureeri ekstraktori seaded</string>
-    <string name="youtube_decryption_support">Flow Extractor</string>
+    <string name="youtube_decryption_support">Tunevol Extractor</string>
     <string name="youtube_decryption_support_desc">Ekstraktib automaatselt YouTube taasesituse konfiguratsioonid. Lukustatud kui aktiivne.</string>
     <string name="force_update_cipher">Sunni konfiguratsioonide värskendamine</string>
     <string name="force_update_cipher_desc">Laadi alla uusimad ekstraktori ülekirjutamise kaardistused. Piiratud 3 värskendusega päevas.</string>
