@@ -134,20 +134,22 @@ fun ChangelogScreen(
           }
         } else {
           val markdown = fetchReleaseNotesMarkdown(tag)
-          if (markdown.isNullOrBlank()) {
+          if (markdown == null || markdown.isBlank()) {
             Log.e("ChangelogScreen", "No release notes available for $tag")
             withContext(Dispatchers.Main) {
               hasError = true
               isLoading = false
             }
           } else {
+            var body: String = markdown
             var imageUrl: String? = null
-            var body = markdown
             Regex("!\\[(.*?)\\]\\((.*?)\\)").find(body)?.let { match ->
               imageUrl = match.groupValues[2]
               body = body.replace(match.value, "").trim()
             }
-            val (parsedDesc, parsedSections) = parseMarkdownToSections(body)
+            val (parsedDesc, parsedSectionsRaw) = parseMarkdownToSections(body)
+            val parsedSections =
+              parsedSectionsRaw.map { ChangelogSection(it.title, it.items) }
             val description = parsedDesc ?: body.takeIf { parsedSections.isEmpty() }
 
             saveChangelogToCache(context, tag, parsedSections, imageUrl, description, null)
