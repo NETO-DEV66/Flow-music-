@@ -286,7 +286,6 @@
     <string name="delete_desc">ลบรายการนี้อย่างถาวร</string>
     <string name="advanced_desc">ปรับความเร็วและคีย์เสียงของเพลง</string>
     <string name="equalizer_desc">ปรับอีควอไลเซอร์เสียง</string>
-    <string name="enable_dynamic_icon">เปิดใช้งานไอคอนไดนามิก</string>
     <string name="mini_player">มินิเพลเยอร์</string>
     <string name="pure_black_mini_player">มินิเพลเยอร์สีดำสนิท</string>
     <string name="mini_player_outline">เส้นขอบมินิเพลเยอร์</string>

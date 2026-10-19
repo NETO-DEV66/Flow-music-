@@ -404,7 +404,6 @@
     <string name="delete_desc">حذف دائمی این آیتم</string>
     <string name="advanced_desc">تغییر سرعت و گام (Pitch) آهنگ</string>
     <string name="equalizer_desc">تنظیم اکولایزر صدا</string>
-    <string name="enable_dynamic_icon">فعال‌سازی آیکون پویای برنامه</string>
     <string name="mini_player">مینی‌پلیر</string>
     <string name="miniplayer_background_style">سبک پس‌زمینه مینی‌پلیر</string>
     <string name="pure_black_mini_player">مینی‌پلیر کاملاً مشکی</string>

@@ -245,7 +245,6 @@
     <string name="delete_desc">Безвозвратно удалить этот элемент</string>
     <string name="advanced_desc">Изменить темп и высоту тона трека</string>
     <string name="equalizer_desc">Настроить эквалайзер</string>
-    <string name="enable_dynamic_icon">Включить динамический значок</string>
     <string name="mini_player">Мини-плеер</string>
     <string name="pure_black_mini_player">Чисто чёрный мини-плеер</string>
     <string name="mini_player_outline">Контур мини-плеера</string>

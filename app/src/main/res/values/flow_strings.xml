@@ -431,7 +431,6 @@
     <string name="delete_desc">Permanently remove this item</string>
     <string name="advanced_desc">Change the song\'s tempo and pitch</string>
     <string name="equalizer_desc">Adjust the audio equalizer</string>
-    <string name="enable_dynamic_icon">Enable dynamic app icon</string>
     <string name="mini_player">Mini-player</string>
     <string name="miniplayer_background_style">Mini-player background style</string>
     <string name="pure_black_mini_player">Pure black mini-player</string>
@@ -1052,7 +1051,5 @@
     <string name="whats_new_title">What\'s new in v%1$s</string>
     <string name="enable_lossless_audio">Enable Lossless Audio</string>
     <string name="lossless_audio_warning">Lossless audio requires a fast connection. It may consume more data and battery. Continue?</string>
-    <string name="legacy_icon">Legacy Icon</string>
-    <string name="legacy_icon_desc">Revert the app icon back to the original legacy design</string>
     <string name="clear_queue_confirm">Are you sure you want to clear upcoming songs from the queue?</string>
 </resources>

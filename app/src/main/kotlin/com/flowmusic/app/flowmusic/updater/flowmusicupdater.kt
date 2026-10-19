@@ -674,8 +674,10 @@ suspend fun checkForUpdate(
 ) {
   withContext(Dispatchers.IO) {
     try {
-      val url = URL("https://api.github.com/repos/NETO-DEV66/Flow-music-/releases/latest")
-      val json = url.openStream().bufferedReader().use { it.readText() }
+      val json =
+        openTimedStream("https://api.github.com/repos/NETO-DEV66/Flow-music-/releases/latest")
+          .bufferedReader()
+          .use { it.readText() }
       val targetRelease = JSONObject(json)
 
       val currentVersion = BuildConfig.VERSION_NAME
@@ -688,45 +690,22 @@ suspend fun checkForUpdate(
         val tagWithPrefix = targetRelease.getString("tag_name")
         val displayTag = tagWithPrefix
 
+        // The release body is the only changelog source: no workflow publishes a
+        // changelog.json asset, so fetching one only added a guaranteed 404 per check.
         val changelogList = mutableListOf<ChangelogSection>()
-        var description: String? = null
         var imageUrl: String? = null
-        try {
-          val changelogUrl =
-            URL(
-              "https://github.com/NETO-DEV66/Flow-music-/releases/download/$tagWithPrefix/changelog.json"
-            )
-          val changelogJson = changelogUrl.openStream().bufferedReader().use { it.readText() }
-          val changelogData = JSONObject(changelogJson)
+        var body =
+          targetRelease.optString("body", context.getString(R.string.no_changelog_available))
 
-          description = changelogData.optString("description").takeIf { it.isNotEmpty() }
-          imageUrl = changelogData.optString("image").takeIf { it.isNotEmpty() }
-
-          val changelogArray = changelogData.getJSONArray("changelog")
-          for (j in 0 until changelogArray.length()) {
-            val sectionObj = changelogArray.getJSONObject(j)
-            val title = sectionObj.getString("title")
-            val itemsArray = sectionObj.getJSONArray("items")
-            val itemsList = mutableListOf<String>()
-            for (k in 0 until itemsArray.length()) {
-              itemsList.add(itemsArray.getString(k))
-            }
-            changelogList.add(ChangelogSection(title, itemsList))
-          }
-        } catch (e: Exception) {
-          var body =
-            targetRelease.optString("body", context.getString(R.string.no_changelog_available))
-
-          val imageRegex = Regex("!\\[(.*?)\\]\\((.*?)\\)")
-          val match = imageRegex.find(body)
-          if (match != null) {
-            imageUrl = match.groupValues[2]
-            body = body.replace(match.value, "").trim()
-          }
-          val (parsedDesc, parsedSections) = parseMarkdownToSections(body)
-          description = parsedDesc ?: body.takeIf { parsedSections.isEmpty() }
-          changelogList.addAll(parsedSections)
+        val imageRegex = Regex("!\\[(.*?)\\]\\((.*?)\\)")
+        val match = imageRegex.find(body)
+        if (match != null) {
+          imageUrl = match.groupValues[2]
+          body = body.replace(match.value, "").trim()
         }
+        val (parsedDesc, parsedSections) = parseMarkdownToSections(body)
+        val description: String? = parsedDesc ?: body.takeIf { parsedSections.isEmpty() }
+        changelogList.addAll(parsedSections)
 
         val publishedAt = targetRelease.getString("published_at")
         val formattedReleaseDate = formatGitHubDate(publishedAt)
@@ -832,35 +811,12 @@ suspend fun fetchChangelogForVersion(currentVersion: String): WhatsNewInfo? =
       val tag = release.getString("tag_name")
 
       val changelogList = mutableListOf<ChangelogSection>()
-      var description: String? = null
-      try {
-        val changelogJson =
-          openTimedStream(
-              "https://github.com/NETO-DEV66/Flow-music-/releases/download/$tag/changelog.json"
-            )
-            .bufferedReader()
-            .use { it.readText() }
-        val changelogData = JSONObject(changelogJson)
-        description = changelogData.optString("description").takeIf { it.isNotEmpty() }
-        val changelogArray = changelogData.getJSONArray("changelog")
-        for (j in 0 until changelogArray.length()) {
-          val sectionObj = changelogArray.getJSONObject(j)
-          val title = sectionObj.getString("title")
-          val itemsArray = sectionObj.getJSONArray("items")
-          val itemsList = mutableListOf<String>()
-          for (k in 0 until itemsArray.length()) {
-            itemsList.add(itemsArray.getString(k))
-          }
-          changelogList.add(ChangelogSection(title, itemsList))
-        }
-      } catch (e: Exception) {
-        var body = release.optString("body", "")
-        val imageRegex = Regex("!\\[(.*?)\\]\\((.*?)\\)")
-        imageRegex.find(body)?.let { match -> body = body.replace(match.value, "").trim() }
-        val (parsedDesc, parsedSections) = parseMarkdownToSections(body)
-        description = parsedDesc ?: body.takeIf { parsedSections.isEmpty() }
-        changelogList.addAll(parsedSections)
-      }
+      var body = release.optString("body", "")
+      val imageRegex = Regex("!\\[(.*?)\\]\\((.*?)\\)")
+      imageRegex.find(body)?.let { match -> body = body.replace(match.value, "").trim() }
+      val (parsedDesc, parsedSections) = parseMarkdownToSections(body)
+      val description: String? = parsedDesc ?: body.takeIf { parsedSections.isEmpty() }
+      changelogList.addAll(parsedSections)
 
       if (changelogList.isEmpty() && description.isNullOrBlank()) return@withContext null
       WhatsNewInfo(changelogList, description)

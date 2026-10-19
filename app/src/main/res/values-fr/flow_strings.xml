@@ -430,7 +430,6 @@
     <string name="delete_desc">Supprimer définitivement cet élément</string>
     <string name="advanced_desc">Modifier le tempo et la hauteur du titre</string>
     <string name="equalizer_desc">Ajuster l\'égaliseur audio</string>
-    <string name="enable_dynamic_icon">Activer l\'icône d\'application dynamique</string>
     <string name="mini_player">Mini-lecteur</string>
     <string name="miniplayer_background_style">Style d\'arrière-plan du mini-lecteur</string>
     <string name="pure_black_mini_player">Mini-lecteur noir pur</string>
@@ -1043,7 +1042,5 @@
     <string name="whats_new_title">Nouveautés de la v%1$s</string>
     <string name="enable_lossless_audio">Activer l\'audio Lossless</string>
     <string name="lossless_audio_warning">L\'audio sans perte (Lossless) nécessite une connexion rapide. Cela peut consommer plus de données et de batterie. Continuer ?</string>
-    <string name="legacy_icon">Ancienne icône</string>
-    <string name="legacy_icon_desc">Restaurer l\'icône originale de l\'application</string>
     <string name="clear_queue_confirm">Êtes-vous sûr de vouloir vider les morceaux à venir de la file d\'attente ?</string>
 </resources>

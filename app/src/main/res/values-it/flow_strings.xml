@@ -242,7 +242,6 @@
     <string name="delete_desc">Rimuovi definitivamente questo elemento</string>
     <string name="advanced_desc">Cambia il tempo e la tonalità del brano</string>
     <string name="equalizer_desc">Regola l\'equalizzatore audio</string>
-    <string name="enable_dynamic_icon">Attiva l\'icona dinamica</string>
     <string name="mini_player">Mini lettore</string>
     <string name="pure_black_mini_player">Mini lettore nero puro</string>
     <string name="mini_player_outline">Schema del mini lettore</string>

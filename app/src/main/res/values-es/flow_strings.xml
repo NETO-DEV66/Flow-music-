@@ -243,7 +243,6 @@
     <string name="delete_desc">Eliminar este elemento de forma permanente</string>
     <string name="advanced_desc">Cambiar el tempo y el tono de la canción</string>
     <string name="equalizer_desc">Ajustar el ecualizador de audio</string>
-    <string name="enable_dynamic_icon">Habilitar icono dinámico</string>
     <string name="mini_player">Minirreproductor</string>
     <string name="pure_black_mini_player">Minirreproductor negro puro</string>
     <string name="mini_player_outline">Esquema del minirreproductor</string>

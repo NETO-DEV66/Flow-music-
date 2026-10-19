@@ -10,7 +10,7 @@ Run from the repo root:  python3 scripts/generate_app_icon.py
 
 from functools import lru_cache
 
-from PIL import Image, ImageDraw, ImageFilter
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 # Brand palette (matches docs/styles.css and the widget soundwave logo)
 VIOLET = (124, 92, 255)
@@ -118,6 +118,33 @@ def monochrome_at(s):
     return out
 
 
+def banner_at(s):
+    """Android TV banner: mark plus wordmark, composed at 16:9 rather than
+    cropped from the square tile, so the lockup reads horizontally."""
+    w, h = s * 16 // 9, s
+    out = Image.new("RGBA", (w, h), DEEP + (255,))
+
+    wash = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+    wd = ImageDraw.Draw(wash)
+    wd.ellipse([-w * 0.25, -h * 0.7, w * 0.45, h * 0.9], fill=VIOLET + (85,))
+    wd.ellipse([w * 0.55, h * 0.1, w * 1.2, h * 1.4], fill=CYAN + (55,))
+    out = Image.alpha_composite(out, wash.filter(ImageFilter.GaussianBlur(radius=h * 0.12)))
+
+    m = int(h * 0.46)
+    out.alpha_composite(mark_at(m, glow=VIOLET), (int(h * 0.20), (h - m) // 2))
+
+    font = ImageFont.truetype("app/src/main/res/font/plus_jakarta_sans.ttf", int(h * 0.235))
+    d = ImageDraw.Draw(out)
+    tx = int(h * 0.20) + m + int(h * 0.13)
+    box = d.textbbox((tx, 0), "Flow Music", font=font)
+    ty = (h - (box[3] - box[1])) // 2 - box[1]
+
+    text_mask = Image.new("L", (w, h), 0)
+    ImageDraw.Draw(text_mask).text((tx, ty), "Flow Music", font=font, fill=255)
+    out.paste(gradient(w, h, VIOLET, CYAN), (0, 0), text_mask)
+    return out
+
+
 def write(img, path):
     img.save(path, "PNG", optimize=True)
 
@@ -130,8 +157,6 @@ def main():
     for d, px in legacy.items():
         write(tile(px), f"{root}/mipmap-{d}/ic_launcher.png")
         write(tile(px, radius_ratio=None), f"{root}/mipmap-{d}/ic_launcher_round.png")
-        write(tile(px), f"{root}/mipmap-{d}/legacy_icon.png")
-        write(tile(px, radius_ratio=None), f"{root}/mipmap-{d}/legacy_icon_round.png")
 
     for d, px in adaptive.items():
         s = px * SS
@@ -141,8 +166,6 @@ def main():
         mono = monochrome_at(s).resize((px, px), Image.LANCZOS)
         write(fg, f"{root}/mipmap-{d}/ic_launcher_foreground.png")
         write(mono, f"{root}/mipmap-{d}/ic_launcher_monochrome.png")
-        write(fg, f"{root}/mipmap-{d}/legacy_icon_foreground.png")
-        write(mono, f"{root}/mipmap-{d}/legacy_icon_monochrome.png")
 
     # Drawable copies used in-app, by widgets and by notifications
     write(tile(512, radius_ratio=0.22), f"{root}/drawable/icon.png")
@@ -150,7 +173,9 @@ def main():
     write(mark_at(1080, glow=VIOLET), f"{root}/drawable/ic_launcher_nobg.png")
     write(monochrome_at(432 * SS).resize((432, 432), Image.LANCZOS), f"{root}/drawable/ic_launcher_monochrome.png")
     write(mark_at(96), f"{root}/drawable/ic_qs_flow_logo.png")
-    write(tile(192), f"{root}/drawable/legacy_icon_raster.png")
+
+    # Android TV banner (@mipmap/tv_banner, referenced from the manifest)
+    write(banner_at(180), f"{root}/mipmap-xhdpi/tv_banner.png")
 
     print("icons generated")
 

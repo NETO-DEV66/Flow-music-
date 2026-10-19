@@ -276,7 +276,6 @@
     <string name="delete_desc">このコンテンツを完全に削除します</string>
     <string name="advanced_desc">曲の再生速度と音程を変更します</string>
     <string name="equalizer_desc">オーディオイコライザーを調整します</string>
-    <string name="enable_dynamic_icon">ダイナミックアイコンを使用</string>
     <string name="pure_black_mini_player">ピュアブラックのミニプレーヤー</string>
     <string name="player_client">プレーヤークライアント</string>
     <string name="player_client_android_vr">Android VR</string>
