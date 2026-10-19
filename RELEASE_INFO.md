@@ -2,7 +2,23 @@
 
 This document tracks all available releases for Flow Music. 
 
-## [v1.2.2] - 2026-08-28 (Latest)
+## [v1.4.4] - 2026-10-19 (Latest)
+[Download on GitHub](https://github.com/NETO-DEV66/Flow-music-/releases/tag/v1.4.4)
+
+**Identity**
+- The project now lives at [NETO-DEV66/Flow-music-](https://github.com/NETO-DEV66/Flow-music-); all in-app links, update checks and repository references were repointed to it.
+
+**Support**
+- Donations are now a single UPI ID: `mrsameer1906@okhdfcbank`, available in the app (About and the welcome dialog), the README and the website. The previous Buy Me a Coffee, Patreon and cryptocurrency options were removed.
+
+**Fixes**
+- In-app update downloads pointed at a file name that does not exist, so the install step could not complete. It now resolves the real release asset.
+- The website's download panel showed a stale version, size and checksum because the release event did not trigger a redeploy. It now refreshes whenever a release finishes.
+
+**Other Changes**
+- Removed unused social and donation assets.
+
+## [v1.2.2] - 2026-08-28
 [Download on GitHub](https://github.com/NETO-DEV66/Flow-music-/releases/tag/v1.2.2)
 
 **Bug Fixes**
