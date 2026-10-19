@@ -27,7 +27,6 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Slider
 import androidx.compose.material3.SnackbarHostState
-import androidx.compose.material3.SnackbarResult
 import androidx.compose.material3.Switch
 import androidx.compose.material3.SwitchDefaults
 import androidx.compose.material3.Text
@@ -39,7 +38,6 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableFloatStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
-import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
@@ -56,7 +54,6 @@ import androidx.navigation.NavController
 import com.flowmusic.app.LocalPlayerAwareWindowInsets
 import com.flowmusic.app.R
 import com.flowmusic.app.constants.AppFont
-import com.flowmusic.app.constants.AppIconTypeKey
 import com.flowmusic.app.constants.AppleMusicLyricsBlurKey
 import com.flowmusic.app.constants.CanvasThumbnailAnimationKey
 import com.flowmusic.app.constants.ChipSortTypeKey
@@ -127,12 +124,9 @@ import com.flowmusic.app.ui.component.WavySlider
 import com.flowmusic.app.ui.theme.DefaultThemeColor
 import com.flowmusic.app.ui.theme.PlayerSliderColors
 import com.flowmusic.app.ui.utils.backToMain
-import com.flowmusic.app.utils.AppIconType
-import com.flowmusic.app.utils.IconUtils
 import com.flowmusic.app.utils.rememberEnumPreference
 import com.flowmusic.app.utils.rememberPreference
 import kotlin.math.roundToInt
-import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -148,16 +142,7 @@ fun AppearanceSettings(
   val (selectedFontValue) = rememberPreference(SelectedFontKey, defaultValue = AppFont.SYSTEM.value)
   val (dynamicTheme, onDynamicThemeChange) =
     rememberPreference(DynamicThemeKey, defaultValue = true)
-  val (enableLegacyIcon, onEnableLegacyIconChange) =
-    rememberPreference(com.flowmusic.app.constants.EnableLegacyIconKey, defaultValue = false)
 
-  val (appIconType, onAppIconTypeChange) =
-    rememberEnumPreference(
-      com.flowmusic.app.constants.AppIconTypeKey,
-      defaultValue = com.flowmusic.app.utils.AppIconType.DEFAULT
-    )
-
-  var showAppIconDialog by rememberSaveable { mutableStateOf(false) }
   val (enableHighRefreshRate, onEnableHighRefreshRateChange) =
     rememberPreference(com.flowmusic.app.constants.EnableHighRefreshRateKey, defaultValue = true)
   val (liveBlurDensity, onLiveBlurDensityChange) =
@@ -166,27 +151,6 @@ fun AppearanceSettings(
     rememberPreference(SelectedThemeColorKey, defaultValue = DefaultThemeColor.toArgb())
 
   val isUsingCustomColor = selectedThemeColorInt != DefaultThemeColor.toArgb()
-  val coroutineScope = rememberCoroutineScope()
-
-  fun handleIconChange(iconType: com.flowmusic.app.utils.AppIconType) {
-    onAppIconTypeChange(iconType)
-    IconUtils.setIcon(activity, iconType)
-    coroutineScope.launch {
-      val result =
-        snackbarHostState.showSnackbar(
-          message = "Icon updated, restart to apply",
-          actionLabel = "Restart"
-        )
-      if (result == SnackbarResult.ActionPerformed) {
-        val packageManager = activity.packageManager
-        val intent = packageManager.getLaunchIntentForPackage(activity.packageName)
-        val componentName = intent?.component
-        val mainIntent = Intent.makeRestartActivityTask(componentName)
-        activity.startActivity(mainIntent)
-        Runtime.getRuntime().exit(0)
-      }
-    }
-  }
 
   val (useNewPlayerDesign, onUseNewPlayerDesignChange) =
     rememberPreference(UseNewPlayerDesignKey, defaultValue = true)
@@ -926,15 +890,6 @@ fun AppearanceSettings(
       title = stringResource(R.string.theme),
       items =
         buildList {
-          add(
-            Material3SettingsItem(
-              isHighlighted = (highlightKey == stringResource(R.string.legacy_icon)),
-              icon = painterResource(R.drawable.grid_view),
-              title = { Text("App Icon") },
-              description = { Text("Choose your launcher icon") },
-              onClick = { navController.navigate("settings/appearance/app_icon") }
-            )
-          )
           add(
             Material3SettingsItem(
               icon = painterResource(com.flowmusic.app.R.drawable.alphabet_cyrillic),

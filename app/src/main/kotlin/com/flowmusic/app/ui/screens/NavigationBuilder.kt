@@ -47,7 +47,6 @@ import com.flowmusic.app.ui.screens.search.SearchScreen
 import com.flowmusic.app.ui.screens.settings.AboutScreen
 import com.flowmusic.app.ui.screens.settings.AccountSettingsScreen
 import com.flowmusic.app.ui.screens.settings.AiSettings
-import com.flowmusic.app.ui.screens.settings.AppIconSettingsScreen
 import com.flowmusic.app.ui.screens.settings.AppearanceSettings
 import com.flowmusic.app.ui.screens.settings.BackupAndRestore
 import com.flowmusic.app.ui.screens.settings.BlockedArtistsScreen
@@ -359,10 +358,6 @@ fun NavGraphBuilder.navigationBuilder(
       snackbarHostState = snackbarHostState,
       highlightKey = backStackEntry.arguments?.getString("highlightKey")
     )
-  }
-
-  composable("settings/appearance/app_icon") {
-    AppIconSettingsScreen(navController, activity, snackbarHostState)
   }
 
   composable("settings/appearance/font") {

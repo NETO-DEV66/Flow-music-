@@ -844,12 +844,6 @@ fun getAllSearchableSettings(): List<SearchableSetting> {
       "settings/appearance"
     ),
     SearchableSetting(
-      stringResource(R.string.legacy_icon),
-      stringResource(R.string.legacy_icon_desc),
-      "Appearance",
-      "settings/appearance"
-    ),
-    SearchableSetting(
       stringResource(R.string.line_by_line_dialog_title),
       stringResource(R.string.line_by_line_dialog_title_desc),
       "Romanization",
@@ -2223,14 +2217,6 @@ fun getAllSearchableSettings(): List<SearchableSetting> {
     ),
     SearchableSetting("Add another account", null, "Account", "settings/account"),
     SearchableSetting(stringResource(R.string.not_logged_in), null, "LastFM", "settings/lastfm"),
-
-    // App Icon Settings
-    SearchableSetting(
-      "App Icon",
-      "Choose your launcher icon",
-      "Appearance",
-      "settings/appearance/app_icon"
-    ),
 
     // About Screen - Social & Support Links
     SearchableSetting("GitHub", "Follow Flow Music on GitHub", "About", "settings/about"),
