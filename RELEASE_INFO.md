@@ -2,7 +2,20 @@
 
 This document tracks all available releases for Tunevol. 
 
-## [v1.5.0] - 2026-10-19 (Latest)
+## [v2.0.0] - 2026-10-19 (Latest)
+[Download on GitHub](https://github.com/NETO-DEV66/Tunevol/releases/tag/v2.0.0)
+
+**Renamed to Tunevol**
+
+- The app is now called **Tunevol** everywhere: the launcher label, the in-app text, the website, the release assets and the Android application ID (`com.tunevol.app`).
+- The Android application ID changed, so **Tunevol installs alongside an older Flow Tune or Flow Music build** instead of upgrading it. Your playlists, downloads and settings stay with the old install; the new app starts fresh.
+- Package namespace, Kotlin sources, JNI native symbols, ProGuard rules, the Room schema directory, the `tunevolcanvas` module and every URL were updated together.
+- The in-app updater now points at `NETO-DEV66/Tunevol`.
+
+> [!IMPORTANT]
+> Because the application ID changed, this is a side-by-side install, not an in-place update. An installed Flow Tune build will **not** receive this as an automatic update.
+
+## [v1.5.0] - 2026-10-19
 [Download on GitHub](https://github.com/NETO-DEV66/Flow-tune-/releases/tag/v1.5.0)
 
 **Renamed to Flow Tune**
