@@ -2,7 +2,20 @@
 
 This document tracks all available releases for Flow Music. 
 
-## [v1.4.4] - 2026-10-19 (Latest)
+## [v1.4.5] - 2026-10-19 (Latest)
+[Download on GitHub](https://github.com/NETO-DEV66/Flow-music-/releases/tag/v1.4.5)
+
+**New Icon and Branding**
+- The app icon is new: a soundwave mark in the brand violet-to-cyan gradient on a deep near-black tile. It replaces the red mark inherited from the upstream project.
+- Every launcher variant was regenerated — standard, round, adaptive foreground, monochrome (themed) and the Android TV banner.
+- The in-app logo changed too. It appears on the About screen, the welcome dialog, the player artwork fallback, the playback notification and the update notification.
+- The website logo and favicon now use the same mark.
+
+**Fixes**
+- The update check compared versions for inequality instead of order, so a build newer than the latest release was offered a downgrade. It now compares versions in order.
+- A download notification referenced an icon that did not exist, which broke the build.
+
+## [v1.4.4] - 2026-10-19
 [Download on GitHub](https://github.com/NETO-DEV66/Flow-music-/releases/tag/v1.4.4)
 
 **Identity**
