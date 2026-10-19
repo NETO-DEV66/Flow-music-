@@ -682,9 +682,10 @@ suspend fun checkForUpdate(
 
       val currentVersion = BuildConfig.VERSION_NAME
       val targetTagName = targetRelease.getString("tag_name")
-      val currentClean = currentVersion.removePrefix("b").removePrefix("v").trim()
-      val targetClean = targetTagName.removePrefix("b").removePrefix("v").trim()
-      val shouldShow = currentClean != targetClean
+      // Ordered comparison, not inequality: "latest" is whatever is published right now, so a
+      // user running a newer build than the latest release would otherwise be offered a
+      // downgrade on every single check.
+      val shouldShow = isNewerVersion(targetTagName, currentVersion)
 
       if (shouldShow) {
         val tagWithPrefix = targetRelease.getString("tag_name")
