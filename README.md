@@ -225,7 +225,7 @@ Without the support of this incredible open-source community, none of this would
 
 <!-- readme: contributors -start -->
 <table>
-<tr><td align="center"><a href="https://github.com/NETO-DEV66"><img src="https://avatars.githubusercontent.com/u/344262144?v=4" width="60" height="60" /></a></td><td align="center"><a href="https://github.com/openhands-agent"><img src="https://avatars.githubusercontent.com/u/175740463?v=4" width="60" height="60" /></a></td></tr>
+<tr><td align="center"><a href="https://github.com/openhands-agent"><img src="https://avatars.githubusercontent.com/u/175740463?v=4" width="60" height="60" /></a></td><td align="center"><a href="https://github.com/NETO-DEV66"><img src="https://avatars.githubusercontent.com/u/344262144?v=4" width="60" height="60" /></a></td></tr>
 </table>
 <!-- readme: contributors -end -->
 
