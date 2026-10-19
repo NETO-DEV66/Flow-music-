@@ -177,6 +177,9 @@ def main():
     # Android TV banner (@mipmap/tv_banner, referenced from the manifest)
     write(banner_at(180), f"{root}/mipmap-xhdpi/tv_banner.png")
 
+    # Landing page favicon / header logo (docs/assets/Flow-new.png)
+    write(tile(512, radius_ratio=0.22), "docs/assets/Flow-new.png")
+
     print("icons generated")
 
 
