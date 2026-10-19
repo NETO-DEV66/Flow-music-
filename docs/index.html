@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Flow Music — Ad-free YouTube Music for Android</title>
+<meta name="description" content="Flow Music is a modern Android music app: ad-free streaming, word-by-word synced lyrics, offline downloads and on-device music recognition. Free and open source." />
+<meta name="theme-color" content="#05060a" />
+<meta property="og:title" content="Flow Music — Ad-free YouTube Music for Android" />
+<meta property="og:description" content="Ad-free streaming, synced lyrics, offline playback and on-device music recognition." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="assets/banner.png" />
+<link rel="icon" href="assets/Flow-new.png" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- animated background -->
+<div class="aurora" aria-hidden="true">
+  <span class="orb orb-1"></span>
+  <span class="orb orb-2"></span>
+  <span class="orb orb-3"></span>
+  <div class="grid-overlay"></div>
+  <div class="noise"></div>
+</div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#top">
+    <img src="assets/Flow-new.png" alt="" width="34" height="34" />
+    <span>Flow<b>Music</b></span>
+  </a>
+  <nav class="nav-links" id="navLinks">
+    <a href="#features">Features</a>
+    <a href="#gallery">Screenshots</a>
+    <a href="#download">Download</a>
+    <a href="#faq">FAQ</a>
+    <a class="ghost" href="https://github.com/NETO-DEV66/Flow-music-" target="_blank" rel="noopener">GitHub</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main id="top">
+
+  <!-- ───────────────────────── HERO ───────────────────────── -->
+  <section class="hero">
+    <div class="hero-copy">
+      <span class="pill reveal">
+        <span class="dot"></span>
+        <span id="versionPill">Free &amp; open source</span>
+      </span>
+
+      <h1 class="reveal">
+        Music that<br />
+        <span class="gradient-text">flows with you.</span>
+      </h1>
+
+      <p class="lede reveal">
+        Ad-free streaming from YouTube Music's entire library, word-by-word
+        synced lyrics, offline downloads, and a music engine that learns your
+        taste — all on your device.
+      </p>
+
+      <div class="cta-row reveal">
+        <a class="btn btn-primary" id="downloadBtn"
+           href="https://github.com/NETO-DEV66/Flow-music-/releases/latest">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4.5-4.5M12 15l-4.5-4.5M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+          <span>Download APK</span>
+        </a>
+        <a class="btn btn-ghost" href="#features">
+          Explore features
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m0 0-6-6m6 6-6 6"/></svg>
+        </a>
+      </div>
+
+      <ul class="hero-meta reveal">
+        <li><b id="statVersion">v1.4.3</b><span>current release</span></li>
+        <li><b id="statSize">—</b><span>APK size</span></li>
+        <li><b>Android 8+</b><span>minSdk 26</span></li>
+      </ul>
+    </div>
+
+    <div class="hero-visual reveal">
+      <div class="phone" id="phone">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <img src="assets/Home.png" alt="Flow Music home screen" />
+        </div>
+        <div class="phone-glow"></div>
+      </div>
+
+      <div class="float-card fc-1">
+        <span class="fc-icon">♪</span>
+        <div><b>Now playing</b><small>Lossless · 320 kbps</small></div>
+      </div>
+      <div class="float-card fc-2">
+        <span class="fc-icon">✓</span>
+        <div><b>Ad-free</b><small>Zero interruptions</small></div>
+      </div>
+      <div class="float-card fc-3">
+        <span class="fc-icon">⤓</span>
+        <div><b>Offline</b><small>Download manager</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── MARQUEE ───────────────────────── -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Ad-Free Streaming</span><span>•</span>
+      <span>Word-by-Word Lyrics</span><span>•</span>
+      <span>Offline Downloads</span><span>•</span>
+      <span>Flow Find</span><span>•</span>
+      <span>Flow Brain</span><span>•</span>
+      <span>Music DNA</span><span>•</span>
+      <span>Canvas Animations</span><span>•</span>
+      <span>Crossfade</span><span>•</span>
+      <span>Data Saver</span><span>•</span>
+      <span>Material You</span><span>•</span>
+      <span>Ad-Free Streaming</span><span>•</span>
+      <span>Word-by-Word Lyrics</span><span>•</span>
+      <span>Offline Downloads</span><span>•</span>
+      <span>Flow Find</span><span>•</span>
+      <span>Flow Brain</span><span>•</span>
+      <span>Music DNA</span><span>•</span>
+      <span>Canvas Animations</span><span>•</span>
+      <span>Crossfade</span><span>•</span>
+      <span>Data Saver</span><span>•</span>
+      <span>Material You</span><span>•</span>
+    </div>
+  </div>
+
+  <!-- ───────────────────────── FEATURES ───────────────────────── -->
+  <section class="section" id="features">
+    <div class="section-head reveal">
+      <span class="eyebrow">Everything, tuned</span>
+      <h2>Built for people who<br /><span class="gradient-text">actually love music</span></h2>
+      <p>Twenty-two modules of carefully tuned audio, lyric and playback engineering.</p>
+    </div>
+
+    <div class="bento">
+      <article class="card card-wide reveal">
+        <div class="card-icon">♪</div>
+        <h3>Ad-free streaming</h3>
+        <p>Stream YouTube Music's full catalogue with zero interruptions, plus a data-saver mode for cellular.</p>
+        <div class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      </article>
+
+      <article class="card reveal">
+        <div class="card-icon">✎</div>
+        <h3>Word-by-word lyrics</h3>
+        <p>Multiple lyric animations, Lyrics+ provider, and built-in AI translation for any language.</p>
+      </article>
+
+      <article class="card reveal">
+        <div class="card-icon">⤓</div>
+        <h3>Offline mode</h3>
+        <p>A dedicated download manager for tracks, albums and playlists — listen anywhere.</p>
+      </article>
+
+      <article class="card reveal">
+        <div class="card-icon">◉</div>
+        <h3>Flow Find</h3>
+        <p>Identify the song playing around you with on-device audio recognition.</p>
+      </article>
+
+      <article class="card card-wide reveal">
+        <div class="card-icon">⌁</div>
+        <h3>Flow Brain</h3>
+        <p>An intelligent on-device engine that reads your listening momentum and slips perfectly aligned tracks into your queue — no cloud, no tracking.</p>
+        <div class="chip-row">
+          <span class="chip">On-device</span>
+          <span class="chip">Private</span>
+          <span class="chip">Adaptive</span>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div class="card-icon">◇</div>
+        <h3>Music DNA</h3>
+        <p>Uncover the backstory of any track, with automatic fallback to Wikipedia for obscure releases.</p>
+      </article>
+
+      <article class="card reveal">
+        <div class="card-icon">◍</div>
+        <h3>Canvas animations</h3>
+        <p>Living, breathing visuals while your music plays, alongside a Material You colour system.</p>
+      </article>
+
+      <article class="card reveal">
+        <div class="card-icon">◐</div>
+        <h3>Made yours</h3>
+        <p>UI density scale, high refresh-rate support, crossfade, crop album art, hide Shorts and video songs.</p>
+      </article>
+
+      <article class="card reveal">
+        <div class="card-icon">⌘</div>
+        <h3>Smart playback</h3>
+        <p>Pause on mute, resume when your earbuds reconnect, seamless audio ↔ video switching.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── GALLERY ───────────────────────── -->
+  <section class="section" id="gallery">
+    <div class="section-head reveal">
+      <span class="eyebrow">Take a look</span>
+      <h2>Every screen, <span class="gradient-text">considered</span></h2>
+      <p>Drag the gallery — Material You, Apple-inspired liquid glass, lyrics and more.</p>
+    </div>
+
+    <div class="gallery" id="gallery">
+      <figure class="shot reveal"><img src="assets/Home.png" alt="Home screen" loading="lazy" /><figcaption>Home</figcaption></figure>
+      <figure class="shot reveal"><img src="assets/Material you music page.png" alt="Material You player" loading="lazy" /><figcaption>Material You player</figcaption></figure>
+      <figure class="shot reveal"><img src="assets/Apple inspired music page.png" alt="Apple-inspired player" loading="lazy" /><figcaption>Apple-inspired player</figcaption></figure>
+      <figure class="shot reveal"><img src="assets/Liquid Glass Default.png" alt="Liquid Glass player" loading="lazy" /><figcaption>Liquid Glass</figcaption></figure>
+      <figure class="shot reveal"><img src="assets/lyrics.png" alt="Synced lyrics" loading="lazy" /><figcaption>Synced lyrics</figcaption></figure>
+      <figure class="shot reveal"><img src="assets/search page.png" alt="Search" loading="lazy" /><figcaption>Search</figcaption></figure>
+      <figure class="shot reveal"><img src="assets/library.png" alt="Library" loading="lazy" /><figcaption>Library</figcaption></figure>
+      <figure class="shot reveal"><img src="assets/Liquid Glass Apple Inspired.png" alt="Liquid Glass Apple-inspired" loading="lazy" /><figcaption>Liquid Glass · Apple</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── STATS ───────────────────────── -->
+  <section class="stats-band reveal">
+    <div class="stat"><b data-count="22">0</b><span>Gradle modules</span></div>
+    <div class="stat"><b data-count="789">0</b><span>Kotlin files</span></div>
+    <div class="stat"><b data-count="26">0</b><span>minSdk 26 · Android 8</span></div>
+    <div class="stat"><b data-count="100">0</b><span>% open source</span></div>
+  </section>
+
+  <!-- ───────────────────────── DOWNLOAD ───────────────────────── -->
+  <section class="section" id="download">
+    <div class="download-card reveal">
+      <div class="dl-glow" aria-hidden="true"></div>
+      <div class="dl-copy">
+        <span class="eyebrow">Get the app</span>
+        <h2>Download <span class="gradient-text">Flow Music</span></h2>
+        <p>
+          Signed universal APK — works on every Android phone. No Play Store,
+          no account, no ads.
+        </p>
+
+        <div class="dl-actions">
+          <a class="btn btn-primary btn-lg" id="downloadBtn2"
+             href="https://github.com/NETO-DEV66/Flow-music-/releases/latest">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4.5-4.5M12 15l-4.5-4.5M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+            <span id="dlLabel">Download latest APK</span>
+          </a>
+          <a class="btn btn-ghost" href="https://github.com/NETO-DEV66/Flow-music-/releases" target="_blank" rel="noopener">All releases</a>
+        </div>
+
+        <dl class="dl-meta">
+          <div><dt>Version</dt><dd id="dlVersion">v1.4.3</dd></div>
+          <div><dt>File</dt><dd id="dlFile">universal · gms · release</dd></div>
+          <div><dt>Size</dt><dd id="dlSize">—</dd></div>
+          <div>
+            <dt>SHA-256</dt>
+            <dd><code id="dlSha">loading…</code>
+              <button class="copy" id="copySha" title="Copy checksum">copy</button>
+            </dd>
+          </div>
+        </dl>
+
+        <ol class="steps">
+          <li><span>1</span> Download the APK</li>
+          <li><span>2</span> Allow install from your browser</li>
+          <li><span>3</span> Open and play</li>
+        </ol>
+      </div>
+
+      <div class="dl-visual">
+        <img src="assets/banner.png" alt="Flow Music" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── FAQ ───────────────────────── -->
+  <section class="section" id="faq">
+    <div class="section-head reveal">
+      <span class="eyebrow">Good to know</span>
+      <h2>Questions, <span class="gradient-text">answered</span></h2>
+    </div>
+
+    <div class="faq reveal">
+      <details open>
+        <summary>Is Flow Music free?</summary>
+        <p>Yes — completely free and open source under GPL-3.0. The few ads on the manual download page are what keep development going.</p>
+      </details>
+      <details>
+        <summary>Do in-app updates work?</summary>
+        <p>OTA updates have been removed. Download new versions manually from this page or the releases list.</p>
+      </details>
+      <details>
+        <summary>Which file should I install?</summary>
+        <p>Just the universal APK from the latest release. It contains every ABI, so it runs on any phone.</p>
+      </details>
+      <details>
+        <summary>Why is my install blocked?</summary>
+        <p>Android blocks apps installed outside the Play Store by default. When prompted, allow installs from your browser or file manager — the app is signed and safe.</p>
+      </details>
+      <details>
+        <summary>Do I need an account?</summary>
+        <p>No sign-up, no login. The app talks to YouTube Music directly, and Flow Brain runs entirely on your device.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── FINAL CTA ───────────────────────── -->
+  <section class="finale reveal">
+    <h2>Your music, <span class="gradient-text">uninterrupted.</span></h2>
+    <p>Install Flow Music and hear the difference in the first thirty seconds.</p>
+    <a class="btn btn-primary btn-lg" id="downloadBtn3"
+       href="https://github.com/NETO-DEV66/Flow-music-/releases/latest">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4.5-4.5M12 15l-4.5-4.5M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+      <span>Download Flow Music</span>
+    </a>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="foot-top">
+    <div class="foot-brand">
+      <img src="assets/Flow-new.png" alt="" width="30" height="30" />
+      <span>Flow<b>Music</b></span>
+    </div>
+    <nav class="foot-links">
+      <a href="https://github.com/NETO-DEV66/Flow-music-" target="_blank" rel="noopener">Repository</a>
+      <a href="https://github.com/NETO-DEV66/Flow-music-/releases" target="_blank" rel="noopener">Releases</a>
+      <a href="https://github.com/NETO-DEV66/Flow-music-/issues" target="_blank" rel="noopener">Issues</a>
+      <a href="https://github.com/NETO-DEV66/Flow-music-/blob/main/PRIVACY_POLICY.md" target="_blank" rel="noopener">Privacy</a>
+    </nav>
+  </div>
+  <p class="foot-note">
+    GPL-3.0 licensed. Flow Music is an independent client and is not affiliated with YouTube or Google.
+  </p>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -15,6 +15,10 @@ Flow Music delivers a seamless, premium listening experience by leveraging YouTu
 
 ---
 
+**[Website](https://neto-dev66.github.io/Flow-music-/)** · [Releases](https://github.com/NETO-DEV66/Flow-music-/releases) · [Issues](https://github.com/NETO-DEV66/Flow-music-/issues)
+
+---
+
 - **GitHub**: [Flow Music repository](https://github.com/mrvoidxin/Flow-music-)
 
 ---
