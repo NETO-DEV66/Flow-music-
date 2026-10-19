@@ -44,6 +44,15 @@ jobs:
             || echo '{}' > docs/release.json
           python3 -c "import json;d=json.load(open('docs/release.json'));print('release:',d.get('tag_name'),[a['name'] for a in d.get('assets',[])])"
 
+      - name: Stamp asset URLs for cache busting
+        run: |
+          # GitHub Pages serves assets with long-lived caching and the file
+          # names never change, so returning visitors would keep old CSS/JS.
+          STAMP="${GITHUB_SHA::8}"
+          sed -i "s|href=\"styles.css\"|href=\"styles.css?v=$STAMP\"|" docs/index.html
+          sed -i "s|src=\"script.js\"|src=\"script.js?v=$STAMP\"|" docs/index.html
+          grep -nE "styles\.css|script\.js" docs/index.html
+
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
